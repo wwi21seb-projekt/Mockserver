@@ -7,7 +7,7 @@ const router = express.Router();
 409: User already exists
 422: Email already exists
  */
-let errorSetter = 204;
+let errorSetter = 201;
 let body;
 
 router.post("/", (req, res) => {
@@ -16,21 +16,21 @@ router.post("/", (req, res) => {
       mockData = {
         username: "test_name",
         nickname: "test name2", // optional
-        email: "test@test.de"
+        email: "test@test.de",
       };
       break;
     case 400:
-      mockData = {error: { code: 400, message: "Bad Request" }};
+      mockData = { error: { code: 400, message: "Bad Request" } };
       break;
     case 409:
-      body = {error: { code: 409, message: "User already exists" }};
+      mockData = { error: { code: 409, message: "User already exists" } };
       break;
     case 422:
-      body = {error: { code: 422, message: "Email invalid" }};
+      mockData = { error: { code: 422, message: "Email invalid" } };
       break;
   }
 
-  res.status(errorSetter).json(mockdata).send();
+  res.status(errorSetter).json(mockData).send();
 });
 
 module.exports = router;

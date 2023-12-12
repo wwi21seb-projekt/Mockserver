@@ -6,7 +6,7 @@ const router = express.Router();
 */
 
 // Beispiel-Endpunkt für Benutzer (/api/users)
-router.post("/", (req, res) => {
+router.delete("/", (req, res) => {
   res.status(204);
   res.send();
 });

@@ -13,7 +13,6 @@ const tokenWithZeros =
 const refreshToken =
   "REFRESH000000000000000000000000000000000000000000000000000000000";
 let mockData;
-// Beispiel-Endpunkt für Benutzer (/api/users)
 router.post("/", (req, res) => {
   switch (errorSetter) {
     case 200:

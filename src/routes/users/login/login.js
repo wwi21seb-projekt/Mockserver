@@ -2,41 +2,34 @@ const express = require("express");
 const router = express.Router();
 
 /* //Codes:
-204: No content
+200: successfull login
 401: Unauthorized
 404: User Not Found
 403: Forbidden
  */
 let errorSetter = 401;
-let body;
-const tokenWithZeros =
-  "0000000000000000000000000000000000000000000000000000000000000000";
+const tokenWithZeros = "0000000000000000000000000000000000000000000000000000000000000000";
+const refreshToken = "REFRESH000000000000000000000000000000000000000000000000000000000";
+let mockData;
+
 // Beispiel-Endpunkt für Benutzer (/api/users)
 router.post("/", (req, res) => {
   switch (errorSetter) {
-    case 204:
-      body = { code: 204 };
-      res.header("Authorization", `Bearer ${tokenWithZeros}`);
+    case 200:
+      mockData = { token: tokenWithZeros, refreshToken: refreshToken };
       break;
     case 404:
-      body = { code: 404, message: "User Not Found" };
+      mockData = {error: { code: 404, message: "User Not Found" }};
       break;
     case 401:
-      body = { code: 401, message: "Unauthorized" };
+      mockData = {error: { code: 401, message: "Unauthorized" }};
       break;
     case 403:
-      body = { code: 403, message: "Forbidden" };
+      mockData = {error: { code: 403, message: "Forbidden" }};
       break;
   }
 
-  res.status(body.code);
-
-  if (errorSetter != 204) {
-    const mockData = { error: body };
-    res.json(mockData);
-  }
-
-  res.send();
+  res.status(errorSetter).json(mockData).send();
 });
 
 module.exports = router;

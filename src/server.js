@@ -6,16 +6,16 @@ const apiVersion = "v1";
 // Middleware für JSON-Parser
 app.use(express.json());
 
-app.use(`/api/${apiVersion}/users/login`, require("./routes/login"));
+app.use(`/api/${apiVersion}/users/login`, require("./routes/users/login/login"));
 app.use(
   `/api/${apiVersion}/users/:username/activate`,
-  require("./routes/resendToken")
+  require("./routes/users/register/resendToken")
 );
 app.use(
   `/api/${apiVersion}/users/:username/activate`,
-  require("./routes/activateUser")
+  require("./routes/users/register/activateUser")
 );
-app.use(`/api/${apiVersion}/imprint`, require("./routes/imprint"));
+app.use(`/api/${apiVersion}/imprint`, require("./routes/imprint/imprint"));
 
 // Starte den Server
 app.listen(port, () => {

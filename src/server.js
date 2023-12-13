@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const port = 3000;
 const apiVersion = "v1";
+const cors =  require("cors")
 
 // Middleware für das Protokollieren von Anfragen
 app.use((req, res, next) => {
@@ -9,7 +10,13 @@ app.use((req, res, next) => {
   next();
 });
 
-// Middleware für JSON-Parser
+ app.use(cors({
+   origin: '*',
+   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+   credentials: true,
+   optionsSuccessStatus: 204,
+ }))
+ //Middleware für JSON-Parser
 app.use(express.json());
 
 //users

@@ -20,13 +20,31 @@ router.post("/", (req, res) => {
       mockData = { token: tokenWithZeros, refreshToken: refreshToken };
       break;
     case 404:
-      mockData = { error: { code: 404, message: "User Not Found" } };
+      mockData = {
+        error: {
+          code: "ERR-004",
+          message:
+            "The user was not found. Please check the username and try again.",
+        },
+      };
       break;
     case 401:
-      mockData = { error: { code: 401, message: "Unauthorized" } };
+      mockData = {
+        error: {
+          code: "ERR-008",
+          message:
+            "The credentials are invalid. Please check the credentials and try again.",
+        },
+      };
       break;
     case 403:
-      mockData = { error: { code: 403, message: "Forbidden" } };
+      mockData = {
+        error: {
+          code: "ERR-005",
+          message:
+            "The user is not activated. Please activate the user and try again.",
+        },
+      };
       break;
   }
 

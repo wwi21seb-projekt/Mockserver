@@ -8,7 +8,7 @@ const router = express.Router();
 422: Email already exists
  */
 let errorSetter = 201;
-let body;
+let mockData;
 
 router.post("/", (req, res) => {
   switch (errorSetter) {
@@ -20,13 +20,30 @@ router.post("/", (req, res) => {
       };
       break;
     case 400:
-      mockData = { error: { code: 400, message: "Bad Request" } };
+      mockData = {
+        error: {
+          code: "ERR-001",
+          message:
+            "The request body is invalid. Please check the request body and try again.",
+        },
+      };
       break;
     case 409:
-      mockData = { error: { code: 409, message: "User already exists" } };
+      mockData = {
+        error: {
+          code: "ERR-002",
+          message:
+            "The username is already taken. Please try another username.",
+        },
+      };
       break;
     case 422:
-      mockData = { error: { code: 422, message: "Email invalid" } };
+      mockData = {
+        error: {
+          code: "ERR-003",
+          message: "The email is already taken. Please try another email.",
+        },
+      };
       break;
   }
 

@@ -7,22 +7,43 @@ const router = express.Router();
 401: Unauthorized
  */
 let errorSetter = 200;
-let body;
 const tokenWithZeros =
   "0000000000000000000000000000000000000000000000000000000000000000";
 const refreshToken =
   "REFRESH000000000000000000000000000000000000000000000000000000000";
 let mockData;
+
 router.post("/", (req, res) => {
   switch (errorSetter) {
     case 200:
       mockData = { token: tokenWithZeros, refreshToken: refreshToken };
       break;
     case 404:
-      mockData = { error: { code: 404, message: "User Not Found" } };
+      mockData = {
+        error: {
+          code: "ERR-007",
+          message:
+            "The token is invalid. Please check the token and try again.",
+        },
+      };
       break;
+    /* case 404:
+      mockData = {
+        error: {
+          code: "ERR-004",
+          message:
+            "The user was not found. Please check the username and try again.",
+        },
+      };
+      break; */
     case 401:
-      mockData = { error: { code: 401, message: "Unauthorized" } };
+      mockData = {
+        error: {
+          code: "ERR-006",
+          message:
+            "The token has expired. Please check your mail for a new token and try again.",
+        },
+      };
       break;
   }
 

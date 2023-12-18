@@ -16,20 +16,90 @@ router.get("/", (req, res) => {
   //req -
   switch (errorSetter) {
     case 200:
-      mockData = {
-        records: [
-          {
-            postId: "uuid",
+      if (feedType == 'global') {
+        mockData = {
+          records: [
+            {
+              postId: "48feb1ac-3b77-42be-a40c-ca1ebfceb983",
+              author: {
+                username: "test_name_01",
+                nickname: "test_nickname_01",
+                profilePictureUrl: ""
+              },
+              creationDate: "2011-03-01T13:00:00Z",
+              content: "This is the first post" //UTF-8
+            },
+            {
+              postId: "ec86d5c4-f1b1-4c3d-9be9-fd1c866f96d3",
+              author: {
+                username: "test_name_01",
+                nickname: "test_nickname_01",
+                profilePictureUrl: ""
+              },
+              creationDate: "2010-03-01T13:00:00Z",
+              content: "This is the secound post" //UTF-8
+            },
+            {
+              postId: "dc582e6c-abe2-4143-8323-3d65279bc4f8",
+              author: {
+                username: "test_name_03",
+                nickname: "test_nickname_03",
+                profilePictureUrl: ""
+              },
+              creationDate: "2007-03-01T13:00:00Z",
+              content: "This is the a post" //UTF-8
+            }
 
-            other: "I dont know Kevin was too fast",
-          },
-        ],
-        pagination: {
-          lastPostId: "uuid of last included post",
-          limit: 0,
-          records: 0,
-        },
-      };
+          ],
+          pagination: {
+            lastPostId: "dc582e6c-abe2-4143-8323-3d65279bc4f8",
+            limit: limit,
+            records: 10
+          }
+        };
+      }
+      if (feedType == 'personal') {
+        mockData = {
+          records: [
+            {
+              postId: "48feb1ac-3b77-42be-a40c-ca1ebfceb983",
+              author: {
+                username: "test_name_01",
+                nickname: "test_nickname_01",
+                profilePictureUrl: ""
+              },
+              creationDate: "2011-03-01T13:00:00Z",
+              content: "This is a personal feed" //UTF-8
+            },
+            {
+              postId: "ec86d5c4-f1b1-4c3d-9be9-fd1c866f96d3",
+              author: {
+                username: "test_name_01",
+                nickname: "test_nickname_01",
+                profilePictureUrl: ""
+              },
+              creationDate: "2010-03-01T13:00:00Z",
+              content: "Hello World" //UTF-8
+            },
+            {
+              postId: "dc582e6c-abe2-4143-8323-3d65279bc4f8",
+              author: {
+                username: "test_name_03",
+                nickname: "test_nickname_03",
+                profilePictureUrl: ""
+              },
+              creationDate: "2007-03-01T13:00:00Z",
+              content: "This is the a post" //UTF-8
+            }
+
+          ],
+          pagination: {
+            lastPostId: "dc582e6c-abe2-4143-8323-3d65279bc4f8",
+            limit: limit,
+            records: 10
+          }
+        };
+      }
       break;
     case 400:
       mockData = {

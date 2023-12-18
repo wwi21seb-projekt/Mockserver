@@ -12,7 +12,7 @@ router.post("/", (req, res) => {
   switch (errorSetter) {
     case 201:
       mockData = {
-        subscriptionId: "uuid",
+        subscriptionId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
         follower: "test_user",
         following: "test_user_2",
         subscriptionDate: "Datetime+UTC",

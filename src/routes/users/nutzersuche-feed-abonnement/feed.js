@@ -16,9 +16,14 @@ router.get("/", (req, res) => {
       mockData = {
         records: [
           {
-            postId: "",
-            creationDate: "",
-            content: "",
+            postId: "eb8cc60e-6a1e-42fc-8c35-61122bfdc04b",
+            creationDate: "2007-03-01T13:00:00Z",
+            content: "My first post!!!",
+          },
+          {
+            postId: "e24c5b4f-1975-4b55-b3bd-59658fb8ae37",
+            creationDate: "2007-03-01T13:00:00Z",
+            content: "Oha wow. ",
           },
         ],
         pagination: {

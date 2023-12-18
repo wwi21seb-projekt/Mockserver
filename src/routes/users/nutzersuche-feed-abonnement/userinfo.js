@@ -13,7 +13,7 @@ router.get("/", (req, res) => {
       mockData = {
         username: "test_user",
         nickname: "test_user_nickname",
-        status: "", //UTF-8, 128 Zeichen
+        status: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquy", //UTF-8, 128 Zeichen
         profilePictureUrl: "",
         follower: 123,
         following: 3467,

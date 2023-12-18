@@ -8,8 +8,6 @@ let errorSetter = 200;
 let mockData;
 
 router.get("/", (req, res) => {
-  const offset = req.query.offset;
-  const limit = req.query.limit;
   switch (errorSetter) {
     case 200:
       mockData = {

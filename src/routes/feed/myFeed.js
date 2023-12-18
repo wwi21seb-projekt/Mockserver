@@ -10,6 +10,9 @@ let errorSetter = 200;
 let mockData;
 
 router.get("/", (req, res) => {
+  const postId = req.query.postId;
+  const limit = req.query.limit;
+  const feedType = req.query.feedType;
   //req -
   switch (errorSetter) {
     case 200:

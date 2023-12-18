@@ -36,15 +36,15 @@ app.use(`/api/users`, require("./routes/users/konfigurieren/changeTriviaInfo"));
 app.use(`/api/users`, require("./routes/users/konfigurieren/changePasswort"));
 
 app.use(
-  `/api/users?username&offset&limit`, //offset = start, limit = anzahl
+  `/api/users`, //offset = start, limit = anzahl
   require("./routes/users/nutzersuche-feed-abonnement/nutzersuche")
 );
 app.use(
-  `/api/users/:username?offset&limit`,
+  `/api/users/:username`,
   require("./routes/users/nutzersuche-feed-abonnement/userinfo")
 );
 app.use(
-  `/api/users/:username/feed?offset&limit`,
+  `/api/users/:username/feed`,
   require("./routes/users/nutzersuche-feed-abonnement/feed")
 );
 app.use(
@@ -56,7 +56,7 @@ app.use(
 app.use(`/api/posts`, require("./routes/posts/createPost"));
 
 //feed
-app.use(`/api/feed?postId&limit&feedType`, require("./routes/feed/myFeed"));
+app.use(`/api/feed`, require("./routes/feed/myFeed"));
 
 //imprint
 app.use(`/api/imprint`, require("./routes/imprint/imprint"));

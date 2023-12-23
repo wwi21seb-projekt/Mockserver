@@ -10,7 +10,7 @@ let mockData;
 router.patch("/", (req, res) => {
   //req - body = { oldPassword: , newPassword: } ?? Is this correct
   switch (errorSetter) {
-    case 202:
+    case 200:
       mockData = {};
       break;
     case 400:

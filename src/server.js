@@ -51,6 +51,10 @@ app.use(
   `/api/subscription`,
   require("./routes/users/nutzersuche-feed-abonnement/abonnement")
 );
+app.use(
+  `/api/subscription/:subscriptionId`,
+  require("./routes/users/nutzersuche-feed-abonnement/unfollow")
+);
 
 //posts
 app.use(`/api/posts`, require("./routes/posts/createPost"));

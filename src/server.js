@@ -56,7 +56,7 @@ app.use(
 app.use(`/api/posts`, require("./routes/posts/createPost"));
 
 //feed
-app.use(`/api/feed?postId&limit&feedType`, require("./routes/feed/myFeed"));
+app.use(`/api/feed`, require("./routes/feed/feed"));
 
 //imprint
 app.use(`/api/imprint`, require("./routes/imprint/imprint"));

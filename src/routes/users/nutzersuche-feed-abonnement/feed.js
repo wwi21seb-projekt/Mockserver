@@ -62,7 +62,11 @@ router.get("/", (req, res) => {
   //req -
   switch (errorSetter) {
     case 200:
-      postsForrecords = Posts.slice(offset, offset + limit);
+      console.log("offset: " + offset);
+      console.log("limit: " + limit);
+      console.log(Number(offset)+Number(limit))
+      postsForrecords = Posts.slice(offset, Number(offset)+Number(limit));
+      console.log(postsForrecords);
       mockData = {
         records: postsForrecords,
         pagination: {

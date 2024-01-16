@@ -104,7 +104,7 @@ router.get("/", (req, res) => {
         }
         if (startIndex !== -1) {
           // Einträge aus dem Array basierend auf startIndex und limit auslesen
-          let postsForrecords = postsGlobal.slice(startIndex, startIndex + limit);
+          let postsForrecords = postsGlobal.slice(startIndex, startIndex + Number(limit));
           if (postsForrecords.length > 0) {
             // Die postId des letzten ausgewählten Posts
             lastPostId = postsForrecords[postsForrecords.length - 1].postId;

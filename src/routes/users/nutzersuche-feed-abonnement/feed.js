@@ -64,15 +64,15 @@ router.get("/", (req, res) => {
     case 200:
       console.log("offset: " + offset);
       console.log("limit: " + limit);
-      console.log(Number(offset)+Number(limit))
-      postsForrecords = Posts.slice(offset, Number(offset)+Number(limit));
+      console.log(Number(offset) + Number(limit))
+      postsForrecords = Posts.slice(offset, Number(offset) + Number(limit));
       console.log(postsForrecords);
       mockData = {
         records: postsForrecords,
         pagination: {
           limit: limit,
           offset: offset,
-          records: postsForrecords.length,
+          records: Posts.length,
         },
       };
       break;

@@ -177,7 +177,7 @@ router.get("/", (req, res) => {
                 limit: limit,
                 records: 0
               }
-              
+
             }
             res.status(200).json(mockData).send();
           }
@@ -195,7 +195,7 @@ router.get("/", (req, res) => {
             pagination: {
               lastPostId: lastPostId,
               limit: limit,
-              records: postsForrecords.length
+              records: postsGlobal.length
             }
           };
         }
@@ -213,7 +213,7 @@ router.get("/", (req, res) => {
                 limit: limit,
                 records: 0
               }
-              
+
             }
             res.status(200).json(mockData).send();
           }
@@ -231,7 +231,7 @@ router.get("/", (req, res) => {
             pagination: {
               lastPostId: lastPostId,
               limit: limit,
-              records: postsForrecords.length
+              records: postsPersonal.length
             }
           };
         }

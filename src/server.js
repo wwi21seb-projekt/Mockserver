@@ -48,11 +48,11 @@ app.use(
   require("./routes/users/nutzersuche-feed-abonnement/feed")
 );
 app.use(
-  `/api/subscription`,
+  `/api/subscriptions`,
   require("./routes/users/nutzersuche-feed-abonnement/abonnement")
 );
 app.use(
-  `/api/subscription/:subscriptionId`,
+  `/api/subscriptions/:subscriptionId`,
   require("./routes/users/nutzersuche-feed-abonnement/unfollow")
 );
 

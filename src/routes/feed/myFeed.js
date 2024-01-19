@@ -164,7 +164,6 @@ router.get("/", (req, res) => {
     case 200:
       if (feedType == "global") {
         let startIndex = 0;
-        console.log("postId: " + postId);
         if (postId) {
           startIndex = postsGlobal.findIndex((post) => post.postId === postId);
           if (startIndex == -1) {

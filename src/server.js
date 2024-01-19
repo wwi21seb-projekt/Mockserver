@@ -58,6 +58,8 @@ app.use(
 
 //posts
 app.use(`/api/posts`, require("./routes/posts/createPost"));
+app.use(`/api/posts/:postId`, require("./routes/posts/deletePost"));
+app.use(`/api/posts`, require("./routes/posts/postSuche"));
 
 //feed
 app.use(`/api/feed`, require("./routes/feed/myFeed"));

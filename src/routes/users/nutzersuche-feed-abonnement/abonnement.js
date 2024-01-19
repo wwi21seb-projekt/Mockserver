@@ -75,11 +75,74 @@ router.get("/", (req, res) => {
               profilePictureURL: "test_user",
             },
           },
+          {
+            subscriptionId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+            subscriptionDate: "Datetime+UTC",
+            user: {
+              username: "test_user",
+              nickname: "test_user",
+              profilePictureURL: "test_user",
+            },
+          },
+          {
+            subscriptionId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+            subscriptionDate: "Datetime+UTC",
+            user: {
+              username: "test_user",
+              nickname: "test_user",
+              profilePictureURL: "test_user",
+            },
+          },
+          {
+            subscriptionId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+            subscriptionDate: "Datetime+UTC",
+            user: {
+              username: "test_user",
+              nickname: "test_user",
+              profilePictureURL: "test_user",
+            },
+          },
+          {
+            subscriptionId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+            subscriptionDate: "Datetime+UTC",
+            user: {
+              username: "test_user",
+              nickname: "test_user",
+              profilePictureURL: "test_user",
+            },
+          },
+          {
+            subscriptionId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+            subscriptionDate: "Datetime+UTC",
+            user: {
+              username: "test_user",
+              nickname: "test_user",
+              profilePictureURL: "test_user",
+            },
+          },
+          {
+            subscriptionId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+            subscriptionDate: "Datetime+UTC",
+            user: {
+              username: "test_user",
+              nickname: "test_user",
+              profilePictureURL: "test_user",
+            },
+          },
+          {
+            subscriptionId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+            subscriptionDate: "Datetime+UTC",
+            user: {
+              username: "test_user",
+              nickname: "test_user",
+              profilePictureURL: "test_user",
+            },
+          },
         ],
         pagination: {
           offset: 0,
           limit: 10,
-          records: 1,
+          records: 15,
         },
       };
       break;

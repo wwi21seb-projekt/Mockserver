@@ -1,4 +1,5 @@
 const express = require("express");
+const { token, refreshToken } = require("../../../staticData/tokens");
 const router = express.Router();
 
 /* //Codes:
@@ -7,16 +8,12 @@ const router = express.Router();
 401: Unauthorized
  */
 let errorSetter = 200;
-const tokenWithZeros =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c";
-const refreshToken =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c";
 let mockData;
 
 router.post("/", (req, res) => {
   switch (errorSetter) {
     case 200:
-      mockData = { token: tokenWithZeros, refreshToken: refreshToken };
+      mockData = { token: token, refreshToken: refreshToken };
       break;
     case 404:
       mockData = {

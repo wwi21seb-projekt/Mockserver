@@ -67,6 +67,9 @@ app.use(`/api/feed`, require("./routes/feed/myFeed"));
 //imprint
 app.use(`/api/imprint`, require("./routes/imprint/imprint"));
 
+//refresh token
+app.use(`/api/users/refresh`, require("./routes/token/refreshToken"));
+
 // Starte den Server
 app.listen(port, () => {
   console.log(`Mock-Server läuft auf http://localhost:${port}`);

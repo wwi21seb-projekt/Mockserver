@@ -1,34 +1,32 @@
 const express = require("express");
+const { token, refreshToken } = require("../../staticData/tokens");
 const router = express.Router();
 
-let errorSetter = 204;
 let mockData;
+let errorSetter = 201;
 
-router.delete("/", (req, res) => {
+router.post("/", (req, res) => {
   switch (errorSetter) {
-    case 204:
-      break;
-    case 401:
+    case 201:
       mockData = {
-        error: {
-          code: "ERR-014",
-          message: "unauthorized",
-        },
+        token: token,
+        refreshToken: refreshToken,
       };
       break;
     case 404:
       mockData = {
         error: {
-          code: "ERR-???",
-          message: "not found",
+          code: "ERR-001",
+          message:
+            "The request body is invalid. Please check the request body and try again.",
         },
       };
       break;
-    case 403:
+    case 401:
       mockData = {
         error: {
           code: "ERR-???",
-          message: "forbidden",
+          message: "nicht angemeldet oder falscher token",
         },
       };
       break;

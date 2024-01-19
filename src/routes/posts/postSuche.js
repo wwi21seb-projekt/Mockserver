@@ -1,3 +1,9 @@
+const express = require("express");
+const router = express.Router();
+
+let errorSetter = 200;
+let mockData;
+
 router.get("/", (req, res) => {
   //parameter postId, limit, q (hashtag) )
   const postId = req.query.postId;
@@ -38,3 +44,5 @@ router.get("/", (req, res) => {
 
   res.status(errorSetter).json(mockData).send();
 });
+
+module.exports = router;

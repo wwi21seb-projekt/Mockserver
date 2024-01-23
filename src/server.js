@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const port = 3000;
+const host = "0.0.0.0";
 const apiVersion = "v1";
 const cors = require("cors");
 
@@ -48,16 +49,22 @@ app.use(
   require("./routes/users/nutzersuche-feed-abonnement/feed")
 );
 app.use(
-  `/api/subscription`,
+  `/api/subscriptions`,
   require("./routes/users/nutzersuche-feed-abonnement/abonnement")
 );
 app.use(
-  `/api/subscription/:subscriptionId`,
+  `/api/subscriptions/:username`,
+  require("./routes/users/nutzersuche-feed-abonnement/subscritptionList")
+);
+app.use(
+  `/api/subscriptions/:subscriptionId`,
   require("./routes/users/nutzersuche-feed-abonnement/unfollow")
 );
 
 //posts
 app.use(`/api/posts`, require("./routes/posts/createPost"));
+app.use(`/api/posts/:postId`, require("./routes/posts/deletePost"));
+app.use(`/api/posts`, require("./routes/posts/postSuche"));
 
 //feed
 app.use(`/api/feed`, require("./routes/feed/myFeed"));
@@ -65,7 +72,10 @@ app.use(`/api/feed`, require("./routes/feed/myFeed"));
 //imprint
 app.use(`/api/imprint`, require("./routes/imprint/imprint"));
 
+//refresh token
+app.use(`/api/users/refresh`, require("./routes/token/refreshToken"));
+
 // Starte den Server
-app.listen(port, () => {
-  console.log(`Mock-Server läuft auf http://localhost:${port}`);
+app.listen(port,host, () => {
+  console.log(`Mock-Server läuft auf http://${host}:${port}`);
 });

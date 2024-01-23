@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const port = 3000;
-const host = "0.0.0.0";
+const host = "localhost";
 const apiVersion = "v1";
 const cors = require("cors");
 

@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const port = 3000;
+const host = "0.0.0.0";
 const apiVersion = "v1";
 const cors = require("cors");
 
@@ -75,6 +76,6 @@ app.use(`/api/imprint`, require("./routes/imprint/imprint"));
 app.use(`/api/users/refresh`, require("./routes/token/refreshToken"));
 
 // Starte den Server
-app.listen(port, () => {
-  console.log(`Mock-Server läuft auf http://localhost:${port}`);
+app.listen(port,host, () => {
+  console.log(`Mock-Server läuft auf http://${host}:${port}`);
 });

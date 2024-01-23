@@ -160,7 +160,7 @@ const postsPersonal = [
 router.get("/", (req, res) => {
   const postId = req.query.postId;
   const limit = req.query.limit;
-  const feedType = req.query.feedType;
+  const feedType = req.query.feedType? req.query.feedType : 'global';
   //req -
   switch (errorSetter) {
     case 200:

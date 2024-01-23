@@ -4,31 +4,90 @@ const router = express.Router();
 let errorSetter = 200;
 let mockData;
 
+const posts = [
+  {
+    postId: "48feb1ac-3b77-42be-a42c-ca1ebfceb983",
+    author: {
+      username: "test_name_01",
+      nickname: "test_nickname_01",
+      profilePictureUrl: "",
+    },
+    creationDate: "2011-03-01T13:00:00Z",
+    content: "Post 1", //UTF-8
+  },
+  {
+    postId: "ec86d5c4-f5b1-4c3d-9be9-fd1c866f96d3",
+    author: {
+      username: "test_name_01",
+      nickname: "test_nickname_01",
+      profilePictureUrl: "",
+    },
+    creationDate: "2010-03-01T13:00:00Z",
+    content: "Suche nach mir Post 2", //UTF-8
+  },
+  {
+    postId: "07d3884e-b4bd-11ee-a506-0242ac120002",
+    author: {
+      username: "test_name_01",
+      nickname: "test_nickname_01",
+      profilePictureUrl: "",
+    },
+    creationDate: "2010-03-01T13:00:00Z",
+    content: "Hier bin ich! 3", //UTF-8
+  },
+  {
+    postId: "1c2f1024-b4bd-11ee-a506-0242ac120002",
+    author: {
+      username: "test_name_01",
+      nickname: "test_nickname_01",
+      profilePictureUrl: "",
+    },
+    creationDate: "2010-03-01T13:00:00Z",
+    content: "Na da guckst du! WA?! 4", //UTF-8
+  },
+  {
+    postId: "23f0a0d4-b4bd-11ee-a506-0242ac120002",
+    author: {
+      username: "test_name_01",
+      nickname: "test_nickname_01",
+      profilePictureUrl: "",
+    },
+    creationDate: "2010-03-01T13:00:00Z",
+    content: "Einfach nur nen langweiliger Post 5", //UTF-8
+  }
+]
+
+
 router.get("/", (req, res) => {
   //parameter postId, limit, q (hashtag) )
   const postId = req.query.postId;
-  const limit = req.query.limit;
+  const limit = parseInt(req.query.limit, 10) || posts.length;
   const q = req.query.q;
+
+  let offset = 0;
+    if (postId) {
+      const index = posts.findIndex((post) => post.postId === postId);
+      if (index !== -1) {
+        offset = index + 1;
+      }
+    }
+
+    const results = q
+      ? posts
+          .filter((post) => post.content.toLowerCase().includes(q.toLowerCase()))
+          .slice(offset, offset + limit)
+      : [];
+    
+    const lastPostId = results.length > 0 ? results[results.length - 1].postId : null;
 
   switch (errorSetter) {
     case 200:
       mockData = {
-        records: [
-          {
-            postId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-            author: {
-              username: "test_user",
-              nickname: "test_user",
-              profilePictureURL: "",
-            },
-            creationDate: "Datetime+UTC",
-            content: "Hallo Welt!",
-          },
-        ],
+        records: results,
         pagination: {
-          lastPostId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-          limit: 10,
-          records: 1,
+          lastPostId: lastPostId,
+          limit: limit,
+          records: posts.length,
         },
       };
       break;

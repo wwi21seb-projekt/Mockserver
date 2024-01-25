@@ -16,6 +16,16 @@ const posts = [
     content: "Post 1", //UTF-8
   },
   {
+    postId: "48feb1ac-3b77-42be-a42c-ca1ebfceb984",
+    author: {
+      username: "test_name_01",
+      nickname: "test_nickname_01",
+      profilePictureUrl: "",
+    },
+    creationDate: "2011-03-01T13:00:00Z",
+    content: "Past 1", //UTF-8
+  },
+  {
     postId: "ec86d5c4-f5b1-4c3d-9be9-fd1c866f96d3",
     author: {
       username: "test_name_01",
@@ -33,7 +43,7 @@ const posts = [
       profilePictureUrl: "",
     },
     creationDate: "2010-03-01T13:00:00Z",
-    content: "Hier bin ich! 3", //UTF-8
+    content: "Hier bin ich! post 3", //UTF-8
   },
   {
     postId: "1c2f1024-b4bd-11ee-a506-0242ac120002",
@@ -43,7 +53,7 @@ const posts = [
       profilePictureUrl: "",
     },
     creationDate: "2010-03-01T13:00:00Z",
-    content: "Na da guckst du! WA?! 4", //UTF-8
+    content: "Na da guckst du! WA?! Post 4", //UTF-8
   },
   {
     postId: "23f0a0d4-b4bd-11ee-a506-0242ac120002",

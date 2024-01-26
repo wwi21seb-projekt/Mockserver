@@ -19,6 +19,11 @@ const postsGlobal = [
     },
     creationDate: "2011-03-01T13:00:00Z",
     content: "Global Post 1", //UTF-8
+    location: {
+      latitude: 0,
+      longitude: 0,
+      accuracy: 100, //meters
+    },
   },
   {
     postId: "ec86d5c4-f5b1-4c3d-9be9-fd1c866f96d3",
@@ -29,6 +34,11 @@ const postsGlobal = [
     },
     creationDate: "2010-03-01T13:00:00Z",
     content: "Global Post 2", //UTF-8
+    location: {
+      latitude: 0,
+      longitude: 0,
+      accuracy: 100, //meters
+    },
   },
   {
     postId: "07d3884e-b4bd-11ee-a506-0242ac120002",
@@ -39,6 +49,11 @@ const postsGlobal = [
     },
     creationDate: "2010-03-01T13:00:00Z",
     content: "Global Post 3", //UTF-8
+    location: {
+      latitude: 0,
+      longitude: 0,
+      accuracy: 100, //meters
+    },
   },
   {
     postId: "1c2f1024-b4bd-11ee-a506-0242ac120002",
@@ -49,6 +64,11 @@ const postsGlobal = [
     },
     creationDate: "2010-03-01T13:00:00Z",
     content: "Global Post 4", //UTF-8
+    location: {
+      latitude: 0,
+      longitude: 0,
+      accuracy: 100, //meters
+    },
   },
   {
     postId: "23f0a0d4-b4bd-11ee-a506-0242ac120002",
@@ -59,6 +79,11 @@ const postsGlobal = [
     },
     creationDate: "2010-03-01T13:00:00Z",
     content: "Global Post 5", //UTF-8
+    location: {
+      latitude: 0,
+      longitude: 0,
+      accuracy: 100, //meters
+    },
   },
   {
     postId: "2d681480-b4bd-11ee-a506-0242ac120002",
@@ -69,6 +94,11 @@ const postsGlobal = [
     },
     creationDate: "2010-03-01T13:00:00Z",
     content: "Global Post 6", //UTF-8
+    location: {
+      latitude: 0,
+      longitude: 0,
+      accuracy: 100, //meters
+    },
   },
   {
     postId: "358d2df8-b4bd-11ee-a506-0242ac120002",
@@ -79,6 +109,11 @@ const postsGlobal = [
     },
     creationDate: "2010-03-01T13:00:00Z",
     content: "Global Post 7", //UTF-8
+    location: {
+      latitude: 0,
+      longitude: 0,
+      accuracy: 100, //meters
+    },
   },
 
   {
@@ -90,6 +125,11 @@ const postsGlobal = [
     },
     creationDate: "2010-03-01T13:00:00Z",
     content: "Global Post 8", //UTF-8
+    location: {
+      latitude: 0,
+      longitude: 0,
+      accuracy: 100, //meters
+    },
   },
   {
     postId: "4d4c728c-b4bd-11ee-a506-0242ac120002",
@@ -100,6 +140,11 @@ const postsGlobal = [
     },
     creationDate: "2010-03-01T13:00:00Z",
     content: "Global Post 9", //UTF-8
+    location: {
+      latitude: 0,
+      longitude: 0,
+      accuracy: 100, //meters
+    },
   },
   {
     postId: "8571bdac-b4bd-11ee-a506-0242ac120002",
@@ -110,6 +155,11 @@ const postsGlobal = [
     },
     creationDate: "2010-03-01T13:00:00Z",
     content: "Global Post 10", //UTF-8
+    location: {
+      latitude: 0,
+      longitude: 0,
+      accuracy: 100, //meters
+    },
   },
   {
     postId: "dc582e6c-abe2-4143-8f23-3d65279bc4f8",
@@ -120,6 +170,11 @@ const postsGlobal = [
     },
     creationDate: "2007-03-01T13:00:00Z",
     content: "Global Post 11", //UTF-8
+    location: {
+      latitude: 0,
+      longitude: 0,
+      accuracy: 100, //meters
+    },
   },
 ];
 const postsPersonal = [
@@ -132,6 +187,11 @@ const postsPersonal = [
     },
     creationDate: "2011-03-01T13:00:00Z",
     content: "Personal Post 1", //UTF-8
+    location: {
+      latitude: 0,
+      longitude: 0,
+      accuracy: 100, //meters
+    },
   },
   {
     postId: "87aea4ec-b489-11ee-a506-0242ac120002",
@@ -142,6 +202,11 @@ const postsPersonal = [
     },
     creationDate: "2010-03-01T13:00:00Z",
     content: "Personal Post 2", //UTF-8
+    location: {
+      latitude: 0,
+      longitude: 0,
+      accuracy: 100, //meters
+    },
   },
   {
     postId: "8d33850e-b489-11ee-a506-0242ac120002",
@@ -152,13 +217,18 @@ const postsPersonal = [
     },
     creationDate: "2007-03-01T13:00:00Z",
     content: "Personal Post 3", //UTF-8
+    location: {
+      latitude: 0,
+      longitude: 0,
+      accuracy: 100, //meters
+    },
   },
 ];
 
 router.get("/", (req, res) => {
   const postId = req.query.postId;
   const limit = req.query.limit;
-  const feedType = req.query.feedType? req.query.feedType : 'global';
+  const feedType = req.query.feedType ? req.query.feedType : "global";
   //req -
   switch (errorSetter) {
     case 200:

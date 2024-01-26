@@ -11,57 +11,112 @@ const Posts = [
     postId: "eb8cc60e-6a1e-42fc-8c35-61122bfdc04b",
     creationDate: "2012-03-01T13:00:00Z",
     content: "My first post!!!",
+    location: {
+      latitude: 0,
+      longitude: 0,
+      accuracy: 100, //meters
+    },
   },
   {
     postId: "e24c5b4f-1975-4b55-b3bd-59658fb8ae37",
     creationDate: "2012-03-07T13:00:00Z",
     content: "Oha wow. ",
+    location: {
+      latitude: 0,
+      longitude: 0,
+      accuracy: 100, //meters
+    },
   },
   {
     postId: "e24c5b4f-1975-4b55-b3bd-59638fb8ae37",
     creationDate: "2007-03-07T13:00:00Z",
     content: "Hello World! ",
+    location: {
+      latitude: 0,
+      longitude: 0,
+      accuracy: 100, //meters
+    },
   },
   {
     postId: "e24c5b4f-1975-4b55-b3bd-59658f43fe37",
     creationDate: "2007-03-06T13:00:00Z",
     content: "Test Post",
+    location: {
+      latitude: 0,
+      longitude: 0,
+      accuracy: 100, //meters
+    },
   },
   {
     postId: "e24c344f-1975-4b55-b3bd-59658fb8ae37",
     creationDate: "2007-03-05T13:00:00Z",
     content: "Baum",
+    location: {
+      latitude: 0,
+      longitude: 0,
+      accuracy: 100, //meters
+    },
   },
   {
     postId: "e24c5b4f-1985-4b55-b3bd-59658fb8ae37",
     creationDate: "2007-03-04T13:00:00Z",
     content: "Endlich den Bachelortitel!! #NieWiederDHBW",
+    location: {
+      latitude: 0,
+      longitude: 0,
+      accuracy: 100, //meters
+    },
   },
   {
     postId: "e24c5b4f-1175-4b55-b3bd-59658fb8ae37",
     creationDate: "2012-03-03T13:00:00Z",
     content: "Ich will nach Hause. #DHBW",
+    location: {
+      latitude: 0,
+      longitude: 0,
+      accuracy: 100, //meters
+    },
   },
   {
     postId: "e24c5b4f-1985-4b55-b3bd-59658fb8ae37",
     creationDate: "2016-03-02T13:00:00Z",
     content: "Schaltet die Ampel endlich ab!!!!",
+    location: {
+      latitude: 0,
+      longitude: 0,
+      accuracy: 100, //meters
+    },
   },
   {
     postId: "e24c5b4f-1985-4b55-b3bd-59612fb8ae37",
     creationDate: "2007-03-04T13:00:00Z",
     content: "Das Haus ist Blau",
+    location: {
+      latitude: 0,
+      longitude: 0,
+      accuracy: 100, //meters
+    },
   },
   {
     postId: "e24c5b4f-1175-4b55-b3bd-5de58fb8ae37",
     creationDate: "2012-03-03T13:00:00Z",
     content: "Ich hab Hunger!",
+    location: {
+      latitude: 0,
+      longitude: 0,
+      accuracy: 100, //meters
+    },
   },
   {
     postId: "e24c5b4f-1985-4b55-b3bd-59cf8fb8ae37",
     creationDate: "2016-03-02T13:00:00Z",
     content:
       "Vegetarismus ist keine Lösung! #FleischIstMeinGemüse #FürDieViehzucht",
+    location: {
+      latitude: 0,
+      longitude: 0,
+      accuracy: 100, //meters
+    },
   },
 ];
 

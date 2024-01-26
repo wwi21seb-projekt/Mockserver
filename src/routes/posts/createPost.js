@@ -10,7 +10,14 @@ let errorSetter = 201;
 let mockData;
 
 router.post("/", (req, res) => {
-  // req.body = { "content": "" }
+  /* req.body = { "content": "",
+                  "location": 
+                      {
+                        "latitude": 0,
+                        "longitude": 0,
+                        "accuracy": 100, //meters 
+                      } //optional, wenn nicht angegeben, dann keine Location
+                } */
   // text ohne bild, bild ohne text, beides über contenttype application/json oder multipart/form-data
   switch (errorSetter) {
     case 201:

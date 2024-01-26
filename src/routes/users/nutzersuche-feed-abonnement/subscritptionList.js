@@ -13,82 +13,58 @@ router.get("/", (req, res) => {
   const type = req.query.type;
   const offset = req.query.offset;
   const limit = req.query.limit;
-    console.log(type, offset, limit);
+  console.log(type, offset, limit);
   switch (errorSetter) {
     case 200:
       mockData = {
         records: [
           {
-            subscriptionId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-            subscriptionDate: "Datetime+UTC",
-            user: {
-              username: "test_user",
-              nickname: "test_user",
-              profilePictureURL: "test_user",
-            },
+            username: "test_user",
+            nickname: "test_user",
+            profilePictureURL: "test_user",
+            subscriptionId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb", //Folge ich der anderen Person schon?
           },
           {
             subscriptionId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-            subscriptionDate: "Datetime+UTC",
-            user: {
-              username: "test_user",
-              nickname: "test_user",
-              profilePictureURL: "test_user",
-            },
+            username: "test_user",
+            nickname: "test_user",
+            profilePictureURL: "test_user",
           },
           {
             subscriptionId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-            subscriptionDate: "Datetime+UTC",
-            user: {
-              username: "test_user",
-              nickname: "test_user",
-              profilePictureURL: "test_user",
-            },
+            username: "test_user",
+            nickname: "test_user",
+            profilePictureURL: "test_user",
           },
           {
             subscriptionId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-            subscriptionDate: "Datetime+UTC",
-            user: {
-              username: "test_user",
-              nickname: "test_user",
-              profilePictureURL: "test_user",
-            },
+            username: "test_user",
+            nickname: "test_user",
+            profilePictureURL: "test_user",
           },
           {
             subscriptionId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-            subscriptionDate: "Datetime+UTC",
-            user: {
-              username: "test_user",
-              nickname: "test_user",
-              profilePictureURL: "test_user",
-            },
+            username: "test_user",
+            nickname: "test_user",
+            profilePictureURL: "test_user",
           },
           {
             subscriptionId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-            subscriptionDate: "Datetime+UTC",
-            user: {
-              username: "test_user",
-              nickname: "test_user",
-              profilePictureURL: "test_user",
-            },
+            username: "test_user",
+            nickname: "test_user",
+            profilePictureURL: "test_user",
           },
           {
             subscriptionId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-            subscriptionDate: "Datetime+UTC",
-            user: {
-              username: "test_user",
-              nickname: "test_user",
-              profilePictureURL: "test_user",
-            },
+            username: "test_user",
+            nickname: "test_user",
+            profilePictureURL: "test_user",
           },
           {
             subscriptionId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-            subscriptionDate: "Datetime+UTC",
-            user: {
-              username: "test_user",
-              nickname: "test_user",
-              profilePictureURL: "test_user",
-            },
+            username: "test_user",
+            nickname: "test_user",
+            profilePictureURL: "test_user",
           },
         ],
         pagination: {

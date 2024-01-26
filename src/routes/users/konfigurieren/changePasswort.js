@@ -24,16 +24,17 @@ router.patch("/", (req, res) => {
     case 401:
       mockData = {
         error: {
-          code: "ERR-???",
-          message: "unauthorized",
+          message: "The request is unauthorized. Please login to your account.",
+          code: "ERR-014",
         },
       };
       break;
     case 403:
       mockData = {
         error: {
-          code: "ERR-???",
-          message: "forbidden - altes pw falsch",
+          message:
+            "The credentials are invalid. Please check the credentials and try again.",
+          code: "ERR-008",
         },
       };
       break;

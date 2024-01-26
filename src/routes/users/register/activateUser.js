@@ -15,6 +15,15 @@ router.post("/", (req, res) => {
     case 200:
       mockData = { token: token, refreshToken: refreshToken };
       break;
+    case 208:
+      mockData = {
+        error: {
+          message:
+            "The user is already activated. Please login to your account.",
+          code: "ERR-013",
+        },
+      };
+      break;
     case 404:
       mockData = {
         error: {
@@ -24,15 +33,15 @@ router.post("/", (req, res) => {
         },
       };
       break;
-    /* case 404:
+    case 404:
       mockData = {
         error: {
-          code: "ERR-004",
           message:
             "The user was not found. Please check the username and try again.",
+          code: "ERR-004",
         },
       };
-      break; */
+      break;
     case 401:
       mockData = {
         error: {

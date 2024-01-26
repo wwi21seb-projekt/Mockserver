@@ -82,11 +82,29 @@ router.get("/", (req, res) => {
         },
       };
       break;
+    case 400:
+      mockData = {
+        error: {
+          message:
+            "The request body is invalid. Please check the request body and try again.",
+          code: "ERR-001",
+        },
+      };
+      break;
     case 401:
       mockData = {
         error: {
+          message: "The request is unauthorized. Please login to your account.",
           code: "ERR-014",
-          message: "unauthorized",
+        },
+      };
+      break;
+    case 404:
+      mockData = {
+        error: {
+          message:
+            "The user was not found. Please check the username and try again.",
+          code: "ERR-004",
         },
       };
       break;

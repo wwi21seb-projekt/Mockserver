@@ -309,19 +309,11 @@ router.get("/", (req, res) => {
         }
       }
       break;
-    case 400:
-      mockData = {
-        error: {
-          code: "ERR-001",
-          message: "The request body is ...",
-        },
-      };
-      break;
     case 401:
       mockData = {
         error: {
-          code: "ERR-???",
-          message: "unauthorized",
+          message: "The request is unauthorized. Please login to your account.",
+          code: "ERR-014",
         },
       };
       break;

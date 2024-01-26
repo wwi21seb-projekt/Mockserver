@@ -19,9 +19,9 @@ router.post("/", (req, res) => {
     case 404:
       mockData = {
         error: {
-          code: "ERR-004",
           message:
-            "The user was not found. Please check the username and try again.",
+            "The credentials are invalid. Please check the credentials and try again.",
+          code: "ERR-008",
         },
       };
       break;

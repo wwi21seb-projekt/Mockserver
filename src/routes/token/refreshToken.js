@@ -25,8 +25,9 @@ router.post("/", (req, res) => {
     case 401:
       mockData = {
         error: {
-          code: "ERR-???",
-          message: "nicht angemeldet oder falscher token",
+          message:
+            "The token is invalid. Please check the token and try again.",
+          code: "ERR-007",
         },
       };
       break;

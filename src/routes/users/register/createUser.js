@@ -37,11 +37,19 @@ router.post("/", (req, res) => {
         },
       };
       break;
-    case 422:
+    case 409:
       mockData = {
         error: {
           code: "ERR-003",
           message: "The email is already taken. Please try another email.",
+        },
+      };
+    case 422:
+      mockData = {
+        error: {
+          code: "ERR-011",
+          message:
+            "The email is unreachable. Please check the email and try again.",
         },
       };
       break;

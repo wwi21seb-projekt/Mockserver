@@ -4,7 +4,7 @@ const router = express.Router();
 /* //Codes:
 200: OK
  */
-let errorSetter = 200;
+let errorSetter = 204;
 let mockData;
 
 router.delete("/", (req, res) => {
@@ -15,24 +15,25 @@ router.delete("/", (req, res) => {
     case 404:
       mockData = {
         error: {
-          code: "ERR-???",
-          message: "Subscription not found",
+          message:
+            "The subscription was not found. Please check the username and try again.",
+          code: "ERR-015",
         },
       };
       break;
     case 401:
       mockData = {
         error: {
-          code: "ERR-???",
-          message: "unauthorized",
+          message: "The request is unauthorized. Please login to your account.",
+          code: "ERR-014",
         },
       };
       break;
-    case 400:
+    case 403:
       mockData = {
         error: {
-          code: "ERR-???",
-          message: "Bad request",
+          message: "You can only delete your own subscriptions.",
+          code: "ERR-018",
         },
       };
       break;

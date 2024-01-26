@@ -25,16 +25,17 @@ router.get("/", (req, res) => {
     case 404:
       mockData = {
         error: {
-          code: "ERR-???",
-          message: "not found",
+          message:
+            "The user was not found. Please check the username and try again.",
+          code: "ERR-004",
         },
       };
       break;
     case 401:
       mockData = {
         error: {
-          code: "ERR-???",
-          message: "unauthorized",
+          message: "The request is unauthorized. Please login to your account.",
+          code: "ERR-014",
         },
       };
       break;

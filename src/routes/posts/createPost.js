@@ -44,8 +44,8 @@ router.post("/", (req, res) => {
     case 401:
       mockData = {
         error: {
-          code: "ERR-???",
-          message: "nicht angemeldet oder falscher token",
+          message: "The request is unauthorized. Please login to your account.",
+          code: "ERR-014",
         },
       };
       break;

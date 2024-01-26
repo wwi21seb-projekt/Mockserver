@@ -21,32 +21,35 @@ router.post("/", (req, res) => {
     case 409:
       mockData = {
         error: {
-          code: "ERR-???",
-          message: "conflict - already following",
+          message:
+            "The subscription already exists. Please check the username and try again.",
+          code: "ERR-016",
         },
       };
       break;
     case 401:
       mockData = {
         error: {
-          code: "ERR-???",
-          message: "unauthorized",
+          message: "The request is unauthorized. Please login to your account.",
+          code: "ERR-014",
         },
       };
       break;
     case 406:
       mockData = {
         error: {
-          code: "ERR-???",
-          message: "Unacceptable",
+          message:
+            "You cannot follow yourself. Please check the username and try again.",
+          code: "ERR-017",
         },
       };
       break;
-    case 400:
+    case 404:
       mockData = {
         error: {
-          code: "ERR-???",
-          message: "Bad request",
+          message:
+            "The user was not found. Please check the username and try again.",
+          code: "ERR-004",
         },
       };
       break;

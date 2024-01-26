@@ -19,16 +19,17 @@ router.delete("/", (req, res) => {
     case 404:
       mockData = {
         error: {
-          code: "ERR-???",
-          message: "not found",
+          message:
+            "The post was not found. Please check the post ID and try again.",
+          code: "ERR-020",
         },
       };
       break;
     case 403:
       mockData = {
         error: {
-          code: "ERR-???",
-          message: "forbidden",
+          message: "You can only delete your own posts.",
+          code: "ERR-019",
         },
       };
       break;

@@ -4,7 +4,7 @@ const router = express.Router();
 /* //Codes:
 200: OK
  */
-let errorSetter = 200;
+let errorSetter = 201;
 let mockData;
 
 router.post("/", (req, res) => {

@@ -7,78 +7,185 @@ const router = express.Router();
 let errorSetter = 200;
 let mockData;
 
+const testAbos = [
+  {
+    followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+    followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+    username: "test_user1",
+    nickname: "test_user",
+    profilePictureURL: "test_user",
+  },
+    {
+      followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      username: "test_user2",
+      nickname: "test_user",
+      profilePictureURL: "test_user",
+    },
+    {
+      followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      username: "test_user3",
+      nickname: "test_user",
+      profilePictureURL: "test_user",
+    },
+    {
+      followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      username: "test_user4",
+      nickname: "test_user",
+      profilePictureURL: "test_user",
+    },
+    {
+      followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      username: "test_user5",
+      nickname: "test_user",
+      profilePictureURL: "test_user",
+    },
+    {
+      followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      username: "test_user6",
+      nickname: "test_user",
+      profilePictureURL: "test_user",
+    },
+    {
+      followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      username: "test_user7",
+      nickname: "test_user",
+      profilePictureURL: "test_user",
+    },
+    {
+      followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      username: "test_user8",
+      nickname: "test_user",
+      profilePictureURL: "test_user",
+    },
+    {
+      followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      username: "test_user9",
+      nickname: "test_user",
+      profilePictureURL: "test_user",
+    },
+    {
+      followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      username: "test_user10",
+      nickname: "test_user",
+      profilePictureURL: "test_user",
+    },
+    {
+      followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      username: "test_user11",
+      nickname: "test_user",
+      profilePictureURL: "test_user",
+    },
+    {
+      followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      username: "test_user12",
+      nickname: "test_user",
+      profilePictureURL: "test_user",
+    },
+    {
+      followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      username: "test_user13",
+      nickname: "test_user",
+      profilePictureURL: "test_user",
+    },
+    {
+      followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      username: "test_user14",
+      nickname: "test_user",
+      profilePictureURL: "test_user",
+    },
+    {
+      followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      username: "test_user15",
+      nickname: "test_user",
+      profilePictureURL: "test_user",
+    },
+    {
+      followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      username: "test_user16",
+      nickname: "test_user",
+      profilePictureURL: "test_user",
+    },
+    {
+      followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      username: "test_user17",
+      nickname: "test_user",
+      profilePictureURL: "test_user",
+    },
+    {
+      followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      username: "test_user18",
+      nickname: "test_user",
+      profilePictureURL: "test_user",
+    },
+    {
+      followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      username: "test_user19",
+      nickname: "test_user",
+      profilePictureURL: "test_user",
+    },
+    {
+      followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      username: "test_user20",
+      nickname: "test_user",
+      profilePictureURL: "test_user",
+    },
+    {
+      followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      username: "test_user21",
+      nickname: "test_user",
+      profilePictureURL: "test_user",
+    },
+    {
+      followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      username: "test_user22",
+      nickname: "test_user",
+      profilePictureURL: "test_user",
+    },
+    {
+      followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      username: "test_user23",
+      nickname: "test_user",
+      profilePictureURL: "test_user",
+    },
+  ]
+  
 router.get("/", (req, res) => {
   //parameter type (follower, following), offset (Default 0), limit (Default 10)
 
   const type = req.query.type;
-  const offset = req.query.offset;
-  const limit = req.query.limit;
-  console.log(type, offset, limit);
+  const offset = parseInt(req.query.offset) || 0; 
+  const limit = parseInt(req.query.limit) || 10;
+  // console.log(type, offset, limit);
   switch (errorSetter) {
     case 200:
       mockData = {
-        records: [
-          {
-            username: "test_user",
-            nickname: "test_user",
-            profilePictureURL: "test_user",
-            followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-            followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-          },
-          {
-            followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-            followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-            username: "test_user",
-            nickname: "test_user",
-            profilePictureURL: "test_user",
-          },
-          {
-            followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-            followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-            username: "test_user",
-            nickname: "test_user",
-            profilePictureURL: "test_user",
-          },
-          {
-            followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-            followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-            username: "test_user",
-            nickname: "test_user",
-            profilePictureURL: "test_user",
-          },
-          {
-            followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-            followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-            username: "test_user",
-            nickname: "test_user",
-            profilePictureURL: "test_user",
-          },
-          {
-            followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-            followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-            username: "test_user",
-            nickname: "test_user",
-            profilePictureURL: "test_user",
-          },
-          {
-            followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-            followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-            username: "test_user",
-            nickname: "test_user",
-            profilePictureURL: "test_user",
-          },
-          {
-            followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-            followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-            username: "test_user",
-            nickname: "test_user",
-            profilePictureURL: "test_user",
-          },
-        ],
+        records: testAbos.slice(offset, offset + limit),
         pagination: {
-          offset: 0,
-          limit: 10,
-          records: 15,
+          offset: offset,
+          limit: limit,
+          records: testAbos.length, 
         },
       };
       break;

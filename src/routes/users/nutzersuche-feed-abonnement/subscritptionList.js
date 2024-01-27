@@ -17,7 +17,7 @@ const testAbos = [
   },
     {
       followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-      followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      followingId: "",
       username: "test_user2",
       nickname: "test_user",
       profilePictureURL: "test_user",
@@ -31,14 +31,14 @@ const testAbos = [
     },
     {
       followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-      followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      followingId: "",
       username: "test_user4",
       nickname: "test_user",
       profilePictureURL: "test_user",
     },
     {
       followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-      followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      followingId: "",
       username: "test_user5",
       nickname: "test_user",
       profilePictureURL: "test_user",
@@ -66,7 +66,7 @@ const testAbos = [
     },
     {
       followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-      followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      followingId: "",
       username: "test_user9",
       nickname: "test_user",
       profilePictureURL: "test_user",
@@ -87,21 +87,21 @@ const testAbos = [
     },
     {
       followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-      followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      followingId: "",
       username: "test_user12",
       nickname: "test_user",
       profilePictureURL: "test_user",
     },
     {
       followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-      followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      followingId: "",
       username: "test_user13",
       nickname: "test_user",
       profilePictureURL: "test_user",
     },
     {
       followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-      followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      followingId: "",
       username: "test_user14",
       nickname: "test_user",
       profilePictureURL: "test_user",
@@ -150,7 +150,7 @@ const testAbos = [
     },
     {
       followerId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
-      followingId: "cca86a3d-9870-4199-b9b8-970b4bc6ebbb",
+      followingId: "",
       username: "test_user21",
       nickname: "test_user",
       profilePictureURL: "test_user",

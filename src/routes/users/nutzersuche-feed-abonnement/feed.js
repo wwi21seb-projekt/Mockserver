@@ -28,7 +28,7 @@ const Posts = [
     },
   },
   {
-    postId: "e24c5b4f-1975-4b55-b3bd-59638fb8ae37",
+    postId: "e24c5b4f-1975-4b55-b3bd-59638fb8ae38",
     creationDate: "2007-03-07T13:00:00Z",
     content: "Hello World! ",
     location: {
@@ -38,7 +38,7 @@ const Posts = [
     },
   },
   {
-    postId: "e24c5b4f-1975-4b55-b3bd-59658f43fe37",
+    postId: "e24c5b4f-1975-4b55-b3bd-59658f43fe39",
     creationDate: "2007-03-06T13:00:00Z",
     content: "Test Post",
     location: {
@@ -48,7 +48,7 @@ const Posts = [
     },
   },
   {
-    postId: "e24c344f-1975-4b55-b3bd-59658fb8ae37",
+    postId: "e24c344f-1975-4b55-b3bd-59658fb8ae47",
     creationDate: "2007-03-05T13:00:00Z",
     content: "Baum",
     location: {
@@ -58,7 +58,7 @@ const Posts = [
     },
   },
   {
-    postId: "e24c5b4f-1985-4b55-b3bd-59658fb8ae37",
+    postId: "e24c5b4f-1985-4b55-b3bd-59658fb8ae57",
     creationDate: "2007-03-04T13:00:00Z",
     content: "Endlich den Bachelortitel!! #NieWiederDHBW",
     location: {
@@ -68,7 +68,7 @@ const Posts = [
     },
   },
   {
-    postId: "e24c5b4f-1175-4b55-b3bd-59658fb8ae37",
+    postId: "e24c5b4f-1175-4b55-b3bd-59658fb8ae67",
     creationDate: "2012-03-03T13:00:00Z",
     content: "Ich will nach Hause. #DHBW",
     location: {
@@ -78,7 +78,7 @@ const Posts = [
     },
   },
   {
-    postId: "e24c5b4f-1985-4b55-b3bd-59658fb8ae37",
+    postId: "e24c5b4f-1985-4b55-b3bd-59658fb8ae77",
     creationDate: "2016-03-02T13:00:00Z",
     content: "Schaltet die Ampel endlich ab!!!!",
     location: {
@@ -88,7 +88,7 @@ const Posts = [
     },
   },
   {
-    postId: "e24c5b4f-1985-4b55-b3bd-59612fb8ae37",
+    postId: "e24c5b4f-1985-4b55-b3bd-59612fb8ae87",
     creationDate: "2007-03-04T13:00:00Z",
     content: "Das Haus ist Blau",
     location: {
@@ -98,7 +98,7 @@ const Posts = [
     },
   },
   {
-    postId: "e24c5b4f-1175-4b55-b3bd-5de58fb8ae37",
+    postId: "e24c5b4f-1175-4b55-b3bd-5de58fb8ae97",
     creationDate: "2012-03-03T13:00:00Z",
     content: "Ich hab Hunger!",
     location: {
@@ -108,7 +108,7 @@ const Posts = [
     },
   },
   {
-    postId: "e24c5b4f-1985-4b55-b3bd-59cf8fb8ae37",
+    postId: "e24c5b4f-1985-4b55-b3bd-59cf8fb8ae54",
     creationDate: "2016-03-02T13:00:00Z",
     content:
       "Vegetarismus ist keine Lösung! #FleischIstMeinGemüse #FürDieViehzucht",
@@ -121,12 +121,12 @@ const Posts = [
 ];
 
 router.get("/", (req, res) => {
-  const offset = req.query.offset;
-  const limit = req.query.limit;
+  const offset = parseInt(req.query.offset); 
+  const limit = parseInt(req.query.limit);
   //req -
   switch (errorSetter) {
     case 200:
-      postsForrecords = Posts.slice(offset, Number(offset) + Number(limit));
+      postsForrecords = Posts.slice(offset, offset + limit);
       mockData = {
         records: postsForrecords,
         pagination: {

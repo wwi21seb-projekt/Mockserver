@@ -12,8 +12,8 @@ const Posts = [
     creationDate: "2012-03-01T13:00:00Z",
     content: "My first post!!!",
     location: {
-      latitude: 0,
-      longitude: 0,
+      latitude: 50.09,
+      longitude: 8.8,
       accuracy: 100, //meters
     },
   },
@@ -22,8 +22,8 @@ const Posts = [
     creationDate: "2012-03-07T13:00:00Z",
     content: "Oha wow. ",
     location: {
-      latitude: 0,
-      longitude: 0,
+      latitude: 49.48,
+      longitude: 8.44,
       accuracy: 100, //meters
     },
   },
@@ -32,8 +32,8 @@ const Posts = [
     creationDate: "2007-03-07T13:00:00Z",
     content: "Hello World! ",
     location: {
-      latitude: 0,
-      longitude: 0,
+      latitude: 49.48,
+      longitude: 8.44,
       accuracy: 100, //meters
     },
   },
@@ -42,8 +42,8 @@ const Posts = [
     creationDate: "2007-03-06T13:00:00Z",
     content: "Test Post",
     location: {
-      latitude: 0,
-      longitude: 0,
+      latitude: 42.69,
+      longitude: 23.32,
       accuracy: 100, //meters
     },
   },
@@ -52,8 +52,8 @@ const Posts = [
     creationDate: "2007-03-05T13:00:00Z",
     content: "Baum",
     location: {
-      latitude: 0,
-      longitude: 0,
+      latitude: 42.69,
+      longitude: 23.32,
       accuracy: 100, //meters
     },
   },
@@ -62,8 +62,8 @@ const Posts = [
     creationDate: "2007-03-04T13:00:00Z",
     content: "Endlich den Bachelortitel!! #NieWiederDHBW",
     location: {
-      latitude: 0,
-      longitude: 0,
+      latitude: 42.69,
+      longitude: 23.32,
       accuracy: 100, //meters
     },
   },
@@ -72,8 +72,8 @@ const Posts = [
     creationDate: "2012-03-03T13:00:00Z",
     content: "Ich will nach Hause. #DHBW",
     location: {
-      latitude: 0,
-      longitude: 0,
+      latitude: 49.48,
+      longitude: 23.32,
       accuracy: 100, //meters
     },
   },
@@ -82,8 +82,8 @@ const Posts = [
     creationDate: "2016-03-02T13:00:00Z",
     content: "Schaltet die Ampel endlich ab!!!!",
     location: {
-      latitude: 0,
-      longitude: 0,
+      latitude: 49.48,
+      longitude: 23.32,
       accuracy: 100, //meters
     },
   },
@@ -92,8 +92,8 @@ const Posts = [
     creationDate: "2007-03-04T13:00:00Z",
     content: "Das Haus ist Blau",
     location: {
-      latitude: 0,
-      longitude: 0,
+      latitude: 42.69,
+      longitude: 23.32,
       accuracy: 100, //meters
     },
   },
@@ -102,8 +102,8 @@ const Posts = [
     creationDate: "2012-03-03T13:00:00Z",
     content: "Ich hab Hunger!",
     location: {
-      latitude: 0,
-      longitude: 0,
+      latitude: 42.69,
+      longitude: 23.32,
       accuracy: 100, //meters
     },
   },
@@ -113,8 +113,8 @@ const Posts = [
     content:
       "Vegetarismus ist keine Lösung! #FleischIstMeinGemüse #FürDieViehzucht",
     location: {
-      latitude: 0,
-      longitude: 0,
+      latitude: 42.69,
+      longitude: 23.32,
       accuracy: 100, //meters
     },
   },

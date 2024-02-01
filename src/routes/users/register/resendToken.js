@@ -3,6 +3,8 @@ const router = express.Router();
 
 /* //Codes:
 204: No content
+208: Already Activated
+404: Not Found
 */
 const errorSetter = 204;
 let mockData;

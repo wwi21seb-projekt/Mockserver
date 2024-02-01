@@ -2,9 +2,13 @@ const express = require("express");
 const router = express.Router();
 
 /* //Codes:
-200: OK
+201: Created
+401: Unauthorized
+404: Not Found
+406: Not Acceptable
+409: Conflict
  */
-let errorSetter = 200;
+let errorSetter = 201;
 let mockData;
 
 router.post("/", (req, res) => {

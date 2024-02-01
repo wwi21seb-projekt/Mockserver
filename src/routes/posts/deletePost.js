@@ -1,6 +1,12 @@
 const express = require("express");
 const router = express.Router();
 
+/* //Codes:
+204: No Content
+401: Unauthorized
+404: Not Found
+403: Forbidden
+*/
 let errorSetter = 204;
 let mockData;
 

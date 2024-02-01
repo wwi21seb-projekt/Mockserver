@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 /* //Codes:
-201: created
+201: Created
 400: Bad Request
 401: Unauthorized
  */

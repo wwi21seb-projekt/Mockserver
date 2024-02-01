@@ -5,6 +5,7 @@ const router = express.Router();
 
 /* //Codes:
 200: OK
+401: Unauthorized
  */
 let errorSetter = 200;
 let mockData;

@@ -2,6 +2,11 @@ const express = require("express");
 const { token, refreshToken } = require("../../staticData/tokens");
 const router = express.Router();
 
+/* //Codes
+201: created
+404: not found
+401: unauthorized
+*/
 let mockData;
 let errorSetter = 201;
 

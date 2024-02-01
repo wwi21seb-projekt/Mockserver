@@ -3,6 +3,8 @@ const router = express.Router();
 
 /* //Codes:
 200: OK
+401: Unauthorized
+404: Not Found
  */
 let errorSetter = 200;
 let mockData;
@@ -150,14 +152,6 @@ router.get("/", (req, res) => {
         error: {
           message: "The request is unauthorized. Please login to your account.",
           code: "ERR-014",
-        },
-      };
-      break;
-    case 400:
-      mockData = {
-        error: {
-          code: "ERR-??",
-          message: "Bad Request",
         },
       };
       break;

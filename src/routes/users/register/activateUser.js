@@ -4,6 +4,7 @@ const router = express.Router();
 
 /* //Codes:
 200: OK
+208: Already Activated
 404: Not Found
 401: Unauthorized
  */

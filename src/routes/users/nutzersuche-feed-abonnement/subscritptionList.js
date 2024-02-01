@@ -3,6 +3,9 @@ const router = express.Router();
 
 /* //Codes:
 200: OK
+400: Bad Request
+401: Unauthorized
+404: Not Found
  */
 let errorSetter = 200;
 let mockData;

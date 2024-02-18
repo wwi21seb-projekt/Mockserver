@@ -8,11 +8,11 @@ const router = express.Router();
 401: unauthorized
 */
 let mockData;
-let errorSetter = 201;
+let errorSetter = 200;
 
 router.post("/", (req, res) => {
   switch (errorSetter) {
-    case 201:
+    case 200:
       mockData = {
         token: token,
         refreshToken: refreshToken,

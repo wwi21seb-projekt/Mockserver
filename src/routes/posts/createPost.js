@@ -5,6 +5,7 @@ const router = express.Router();
 201: Created
 400: Bad Request
 401: Unauthorized
+404: Not found
  */
 let errorSetter = 201;
 let mockData;
@@ -17,6 +18,7 @@ router.post("/", (req, res) => {
                         "longitude": 0,
                         "accuracy": 100, //meters 
                       } //optional, wenn nicht angegeben, dann keine Location
+                  repostedPostId: "3adf32ac-90b4-4aae-a6d2-a979938d5dcd" //optional
                 } */
   // text ohne bild, bild ohne text, beides über contenttype application/json oder multipart/form-data
   switch (errorSetter) {
@@ -30,6 +32,25 @@ router.post("/", (req, res) => {
         },
         creationDate: "datetime+UTC",
         content: "This is a post", //UTF-8
+        likes: 123,
+        liked: false,
+        likes: 123,
+        liked: false,
+        repost: {
+          //optional
+          author: {
+            username: "test_user",
+            nickname: "test_user",
+            profilePictureUrl: "",
+          },
+          content: "This is a post", //UTF-8
+          creationDate: "datetime+UTC",
+          location: {
+            latitude: 0,
+            longitude: 0,
+            accuracy: 100, //meters
+          },
+        },
       };
       break;
     case 400:
@@ -46,6 +67,14 @@ router.post("/", (req, res) => {
         error: {
           message: "The request is unauthorized. Please login to your account.",
           code: "ERR-014",
+        },
+      };
+      break;
+    case 404:
+      mockData = {
+        error: {
+          message: "Repost not found",
+          code: "ERR-XXX",
         },
       };
       break;

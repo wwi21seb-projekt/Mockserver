@@ -75,7 +75,26 @@ app.use(`/api/imprint`, require("./routes/imprint/imprint"));
 //refresh token
 app.use(`/api/users/refresh`, require("./routes/token/refreshToken"));
 
+//Likes
+app.use(
+  `/api/posts/:postId/likes`,
+  require("./routes/posts/Interactions/like.js")
+);
+app.use(
+  `/api/posts/:postId/likes`,
+  require("./routes/posts/Interactions/dislike.js")
+);
+
+app.use(
+  `/api/posts/:postId/comments`,
+  require("./routes/posts/Interactions/postComment.js")
+);
+app.use(
+  `/api/posts/:postId/comments`,
+  require("./routes/posts/Interactions/getComments.js")
+);
+
 // Starte den Server
-app.listen(port,host, () => {
+app.listen(port, host, () => {
   console.log(`Mock-Server läuft auf http://${host}:${port}`);
 });

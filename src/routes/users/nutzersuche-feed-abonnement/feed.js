@@ -18,6 +18,23 @@ const Posts = [
       longitude: 8.8,
       accuracy: 100, //meters
     },
+    likes: 123,
+    liked: false,
+    repost: {
+      //optional
+      author: {
+        username: "test_user",
+        nickname: "test_user",
+        profilePictureUrl: "",
+      },
+      content: "This is a post", //UTF-8
+      creationDate: "datetime+UTC",
+      location: {
+        latitude: 0,
+        longitude: 0,
+        accuracy: 100, //meters
+      },
+    },
   },
   {
     postId: "e24c5b4f-1975-4b55-b3bd-59658fb8ae37",
@@ -27,6 +44,23 @@ const Posts = [
       latitude: 49.48,
       longitude: 8.44,
       accuracy: 100, //meters
+    },
+    likes: 123,
+    liked: false,
+    repost: {
+      //optional
+      author: {
+        username: "test_user",
+        nickname: "test_user",
+        profilePictureUrl: "",
+      },
+      content: "This is a post", //UTF-8
+      creationDate: "datetime+UTC",
+      location: {
+        latitude: 0,
+        longitude: 0,
+        accuracy: 100, //meters
+      },
     },
   },
   {
@@ -38,6 +72,23 @@ const Posts = [
       longitude: 8.44,
       accuracy: 100, //meters
     },
+    likes: 123,
+    liked: false,
+    repost: {
+      //optional
+      author: {
+        username: "test_user",
+        nickname: "test_user",
+        profilePictureUrl: "",
+      },
+      content: "This is a post", //UTF-8
+      creationDate: "datetime+UTC",
+      location: {
+        latitude: 0,
+        longitude: 0,
+        accuracy: 100, //meters
+      },
+    },
   },
   {
     postId: "e24c5b4f-1975-4b55-b3bd-59658f43fe39",
@@ -47,6 +98,23 @@ const Posts = [
       latitude: 42.69,
       longitude: 23.32,
       accuracy: 100, //meters
+    },
+    likes: 123,
+    liked: false,
+    repost: {
+      //optional
+      author: {
+        username: "test_user",
+        nickname: "test_user",
+        profilePictureUrl: "",
+      },
+      content: "This is a post", //UTF-8
+      creationDate: "datetime+UTC",
+      location: {
+        latitude: 0,
+        longitude: 0,
+        accuracy: 100, //meters
+      },
     },
   },
   {
@@ -58,6 +126,24 @@ const Posts = [
       longitude: 23.32,
       accuracy: 100, //meters
     },
+    likes: 123,
+    liked: false,
+    repost: {
+      //optional
+      author: {
+        username: "test_user",
+        nickname: "test_user",
+        profilePictureUrl: "",
+      },
+      content: "This is a post", //UTF-8
+      creationDate: "datetime+UTC",
+      location: {
+        latitude: 0,
+        longitude: 0,
+        accuracy: 100, //meters
+      },
+    },
+    comments: 23,
   },
   {
     postId: "e24c5b4f-1985-4b55-b3bd-59658fb8ae57",
@@ -67,6 +153,23 @@ const Posts = [
       latitude: 42.69,
       longitude: 23.32,
       accuracy: 100, //meters
+    },
+    likes: 123,
+    liked: false,
+    repost: {
+      //optional
+      author: {
+        username: "test_user",
+        nickname: "test_user",
+        profilePictureUrl: "",
+      },
+      content: "This is a post", //UTF-8
+      creationDate: "datetime+UTC",
+      location: {
+        latitude: 0,
+        longitude: 0,
+        accuracy: 100, //meters
+      },
     },
   },
   {
@@ -78,6 +181,23 @@ const Posts = [
       longitude: 23.32,
       accuracy: 100, //meters
     },
+    likes: 123,
+    liked: false,
+    repost: {
+      //optional
+      author: {
+        username: "test_user",
+        nickname: "test_user",
+        profilePictureUrl: "",
+      },
+      content: "This is a post", //UTF-8
+      creationDate: "datetime+UTC",
+      location: {
+        latitude: 0,
+        longitude: 0,
+        accuracy: 100, //meters
+      },
+    },
   },
   {
     postId: "e24c5b4f-1985-4b55-b3bd-59658fb8ae77",
@@ -87,6 +207,23 @@ const Posts = [
       latitude: 49.48,
       longitude: 23.32,
       accuracy: 100, //meters
+    },
+    likes: 123,
+    liked: false,
+    repost: {
+      //optional
+      author: {
+        username: "test_user",
+        nickname: "test_user",
+        profilePictureUrl: "",
+      },
+      content: "This is a post", //UTF-8
+      creationDate: "datetime+UTC",
+      location: {
+        latitude: 0,
+        longitude: 0,
+        accuracy: 100, //meters
+      },
     },
   },
   {
@@ -98,6 +235,23 @@ const Posts = [
       longitude: 23.32,
       accuracy: 100, //meters
     },
+    likes: 123,
+    liked: false,
+    repost: {
+      //optional
+      author: {
+        username: "test_user",
+        nickname: "test_user",
+        profilePictureUrl: "",
+      },
+      content: "This is a post", //UTF-8
+      creationDate: "datetime+UTC",
+      location: {
+        latitude: 0,
+        longitude: 0,
+        accuracy: 100, //meters
+      },
+    },
   },
   {
     postId: "e24c5b4f-1175-4b55-b3bd-5de58fb8ae97",
@@ -107,6 +261,23 @@ const Posts = [
       latitude: 42.69,
       longitude: 23.32,
       accuracy: 100, //meters
+    },
+    likes: 123,
+    liked: false,
+    repost: {
+      //optional
+      author: {
+        username: "test_user",
+        nickname: "test_user",
+        profilePictureUrl: "",
+      },
+      content: "This is a post", //UTF-8
+      creationDate: "datetime+UTC",
+      location: {
+        latitude: 0,
+        longitude: 0,
+        accuracy: 100, //meters
+      },
     },
   },
   {
@@ -119,11 +290,28 @@ const Posts = [
       longitude: 23.32,
       accuracy: 100, //meters
     },
+    likes: 123,
+    liked: false,
+    repost: {
+      //optional
+      author: {
+        username: "test_user",
+        nickname: "test_user",
+        profilePictureUrl: "",
+      },
+      content: "This is a post", //UTF-8
+      creationDate: "datetime+UTC",
+      location: {
+        latitude: 0,
+        longitude: 0,
+        accuracy: 100, //meters
+      },
+    },
   },
 ];
 
 router.get("/", (req, res) => {
-  const offset = parseInt(req.query.offset); 
+  const offset = parseInt(req.query.offset);
   const limit = parseInt(req.query.limit);
   //req -
   switch (errorSetter) {

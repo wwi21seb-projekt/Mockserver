@@ -25,6 +25,23 @@ const postsGlobal = [
       longitude: 0,
       accuracy: 100, //meters
     },
+    likes: 123,
+    liked: false,
+    repost: {
+      //optional
+      author: {
+        username: "test_user",
+        nickname: "test_user",
+        profilePictureUrl: "",
+      },
+      content: "This is a post", //UTF-8
+      creationDate: "datetime+UTC",
+      location: {
+        latitude: 0,
+        longitude: 0,
+        accuracy: 100, //meters
+      },
+    },
   },
   {
     postId: "ec86d5c4-f5b1-4c3d-9be9-fd1c866f96d3",
@@ -39,6 +56,23 @@ const postsGlobal = [
       latitude: 0,
       longitude: 0,
       accuracy: 100, //meters
+    },
+    likes: 123,
+    liked: false,
+    repost: {
+      //optional
+      author: {
+        username: "test_user",
+        nickname: "test_user",
+        profilePictureUrl: "",
+      },
+      content: "This is a post", //UTF-8
+      creationDate: "datetime+UTC",
+      location: {
+        latitude: 0,
+        longitude: 0,
+        accuracy: 100, //meters
+      },
     },
   },
   {
@@ -55,6 +89,23 @@ const postsGlobal = [
       longitude: 0,
       accuracy: 100, //meters
     },
+    likes: 123,
+    liked: false,
+    repost: {
+      //optional
+      author: {
+        username: "test_user",
+        nickname: "test_user",
+        profilePictureUrl: "",
+      },
+      content: "This is a post", //UTF-8
+      creationDate: "datetime+UTC",
+      location: {
+        latitude: 0,
+        longitude: 0,
+        accuracy: 100, //meters
+      },
+    },
   },
   {
     postId: "1c2f1024-b4bd-11ee-a506-0242ac120002",
@@ -69,6 +120,23 @@ const postsGlobal = [
       latitude: 0,
       longitude: 0,
       accuracy: 100, //meters
+    },
+    likes: 123,
+    liked: false,
+    repost: {
+      //optional
+      author: {
+        username: "test_user",
+        nickname: "test_user",
+        profilePictureUrl: "",
+      },
+      content: "This is a post", //UTF-8
+      creationDate: "datetime+UTC",
+      location: {
+        latitude: 0,
+        longitude: 0,
+        accuracy: 100, //meters
+      },
     },
   },
   {
@@ -85,6 +153,23 @@ const postsGlobal = [
       longitude: 0,
       accuracy: 100, //meters
     },
+    likes: 123,
+    liked: false,
+    repost: {
+      //optional
+      author: {
+        username: "test_user",
+        nickname: "test_user",
+        profilePictureUrl: "",
+      },
+      content: "This is a post", //UTF-8
+      creationDate: "datetime+UTC",
+      location: {
+        latitude: 0,
+        longitude: 0,
+        accuracy: 100, //meters
+      },
+    },
   },
   {
     postId: "2d681480-b4bd-11ee-a506-0242ac120002",
@@ -100,6 +185,23 @@ const postsGlobal = [
       longitude: 0,
       accuracy: 100, //meters
     },
+    likes: 123,
+    liked: false,
+    repost: {
+      //optional
+      author: {
+        username: "test_user",
+        nickname: "test_user",
+        profilePictureUrl: "",
+      },
+      content: "This is a post", //UTF-8
+      creationDate: "datetime+UTC",
+      location: {
+        latitude: 0,
+        longitude: 0,
+        accuracy: 100, //meters
+      },
+    },
   },
   {
     postId: "358d2df8-b4bd-11ee-a506-0242ac120002",
@@ -114,6 +216,23 @@ const postsGlobal = [
       latitude: 0,
       longitude: 0,
       accuracy: 100, //meters
+    },
+    likes: 123,
+    liked: false,
+    repost: {
+      //optional
+      author: {
+        username: "test_user",
+        nickname: "test_user",
+        profilePictureUrl: "",
+      },
+      content: "This is a post", //UTF-8
+      creationDate: "datetime+UTC",
+      location: {
+        latitude: 0,
+        longitude: 0,
+        accuracy: 100, //meters
+      },
     },
   },
 
@@ -131,6 +250,23 @@ const postsGlobal = [
       longitude: 0,
       accuracy: 100, //meters
     },
+    likes: 123,
+    liked: false,
+    repost: {
+      //optional
+      author: {
+        username: "test_user",
+        nickname: "test_user",
+        profilePictureUrl: "",
+      },
+      content: "This is a post", //UTF-8
+      creationDate: "datetime+UTC",
+      location: {
+        latitude: 0,
+        longitude: 0,
+        accuracy: 100, //meters
+      },
+    },
   },
   {
     postId: "4d4c728c-b4bd-11ee-a506-0242ac120002",
@@ -145,6 +281,23 @@ const postsGlobal = [
       latitude: 0,
       longitude: 0,
       accuracy: 100, //meters
+    },
+    likes: 123,
+    liked: false,
+    repost: {
+      //optional
+      author: {
+        username: "test_user",
+        nickname: "test_user",
+        profilePictureUrl: "",
+      },
+      content: "This is a post", //UTF-8
+      creationDate: "datetime+UTC",
+      location: {
+        latitude: 0,
+        longitude: 0,
+        accuracy: 100, //meters
+      },
     },
   },
   {
@@ -161,6 +314,23 @@ const postsGlobal = [
       longitude: 0,
       accuracy: 100, //meters
     },
+    likes: 123,
+    liked: false,
+    repost: {
+      //optional
+      author: {
+        username: "test_user",
+        nickname: "test_user",
+        profilePictureUrl: "",
+      },
+      content: "This is a post", //UTF-8
+      creationDate: "datetime+UTC",
+      location: {
+        latitude: 0,
+        longitude: 0,
+        accuracy: 100, //meters
+      },
+    },
   },
   {
     postId: "dc582e6c-abe2-4143-8f23-3d65279bc4f8",
@@ -175,6 +345,23 @@ const postsGlobal = [
       latitude: 0,
       longitude: 0,
       accuracy: 100, //meters
+    },
+    likes: 123,
+    liked: false,
+    repost: {
+      //optional
+      author: {
+        username: "test_user",
+        nickname: "test_user",
+        profilePictureUrl: "",
+      },
+      content: "This is a post", //UTF-8
+      creationDate: "datetime+UTC",
+      location: {
+        latitude: 0,
+        longitude: 0,
+        accuracy: 100, //meters
+      },
     },
   },
 ];
@@ -193,6 +380,23 @@ const postsPersonal = [
       longitude: 0,
       accuracy: 100, //meters
     },
+    likes: 123,
+    liked: false,
+    repost: {
+      //optional
+      author: {
+        username: "test_user",
+        nickname: "test_user",
+        profilePictureUrl: "",
+      },
+      content: "This is a post", //UTF-8
+      creationDate: "datetime+UTC",
+      location: {
+        latitude: 0,
+        longitude: 0,
+        accuracy: 100, //meters
+      },
+    },
   },
   {
     postId: "87aea4ec-b489-11ee-a506-0242ac120002",
@@ -208,6 +412,23 @@ const postsPersonal = [
       longitude: 0,
       accuracy: 100, //meters
     },
+    likes: 123,
+    liked: false,
+    repost: {
+      //optional
+      author: {
+        username: "test_user",
+        nickname: "test_user",
+        profilePictureUrl: "",
+      },
+      content: "This is a post", //UTF-8
+      creationDate: "datetime+UTC",
+      location: {
+        latitude: 0,
+        longitude: 0,
+        accuracy: 100, //meters
+      },
+    },
   },
   {
     postId: "8d33850e-b489-11ee-a506-0242ac120002",
@@ -222,6 +443,23 @@ const postsPersonal = [
       latitude: 0,
       longitude: 0,
       accuracy: 100, //meters
+    },
+    likes: 123,
+    liked: false,
+    repost: {
+      //optional
+      author: {
+        username: "test_user",
+        nickname: "test_user",
+        profilePictureUrl: "",
+      },
+      content: "This is a post", //UTF-8
+      creationDate: "datetime+UTC",
+      location: {
+        latitude: 0,
+        longitude: 0,
+        accuracy: 100, //meters
+      },
     },
   },
 ];

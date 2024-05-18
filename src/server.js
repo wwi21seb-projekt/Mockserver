@@ -66,6 +66,18 @@ app.use(`/api/posts`, require("./routes/posts/createPost"));
 app.use(`/api/posts/:postId`, require("./routes/posts/deletePost"));
 app.use(`/api/posts`, require("./routes/posts/postSuche"));
 
+//notifications
+//getAllNotifications
+app.use(
+  `/api/notifications`,
+  require("./routes/notifications/getNotifications")
+);
+//deleteNotification
+app.use(
+  `/api/notifications/:notificationId`,
+  require("./routes/notifications/deleteNotification")
+);
+
 //feed
 app.use(`/api/feed`, require("./routes/feed/myFeed"));
 

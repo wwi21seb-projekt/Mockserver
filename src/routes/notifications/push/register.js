@@ -2,17 +2,17 @@ const express = require("express");
 const router = express.Router();
 
 /* //Codes:
-204: No Content
+200: Ok
+400: Bad request
 401: Unauthorized
-404: Not Found
-403: Forbidden
+
 */
-let errorSetter = 204;
+let errorSetter = 200;
 let mockData;
 
-router.delete("/", (req, res) => {
+router.push("/", (req, res) => {
   switch (errorSetter) {
-    case 204:
+    case 201:
       break;
     case 401:
       mockData = {
@@ -22,20 +22,11 @@ router.delete("/", (req, res) => {
         },
       };
       break;
-    case 404:
+    case 400:
       mockData = {
         error: {
-          message:
-            "The post was not found. Please check the post ID and try again.",
-          code: "ERR-020",
-        },
-      };
-      break;
-    case 403:
-      mockData = {
-        error: {
-          message: "You can only delete your own notifications.",
-          code: "ERR-019",
+          code: "ERR-???",
+          message: "Bad request",
         },
       };
       break;

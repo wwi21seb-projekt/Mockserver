@@ -70,7 +70,9 @@ router.get("/", (req, res) => {
       break;
   }
 
-  res.status(errorSetter).json(mockData).send();
+  res.status(errorSetter);
+  if (mockData) res.json(mockData);
+  res.send();
 });
 
 module.exports = router;

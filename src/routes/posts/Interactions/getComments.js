@@ -7,32 +7,50 @@ const router = express.Router();
 401: Unauthorized
 409: Conflict
  */
-let errorSetter = 201;
+let errorSetter = 200;
 let mockData;
 
 router.get("/", (req, res) => {
-  /*
-      limit und offset wie user suche
-  */
+  const offset = req.query.offset;
+  const limit = req.query.limit;
   switch (errorSetter) {
     case 200:
       mockData = {
         records: [
           {
-            commentId: "",
-            content: "",
+            commentId: "539328e8-8750-4f42-9d53-d31409877c33",
+            content: "rterett",
             author: {
-              username: "",
-              nickname: "",
+              username: "testtest",
+              nickname: "test",
               profilePictureURL: "",
             },
             creationDate: "2007-03-04T13:00:00Z",
           },
+          {
+            commentId: "539328e8-8750-4f42-9d53-d31409873c33",
+            content: "rfseefesfefs",
+            author: {
+              username: "testtest",
+              nickname: "test",
+              profilePictureURL: "",
+            },
+            creationDate: "2007-04-04T13:00:00Z",
+          },{
+            commentId: "539328e8-8750-4f42-9d53-d31403277c33",
+            content: "rsdfdsggtgergt",
+            author: {
+              username: "testtesttest",
+              nickname: "testasdf",
+              profilePictureURL: "",
+            },
+            creationDate: "2007-03-05T13:00:00Z",
+          }
         ],
         pagination: {
           offset: offset,
           limit: limit,
-          records: user.length,
+          records: 3,
         },
       };
       break;

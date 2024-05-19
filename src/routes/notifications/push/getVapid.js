@@ -1,3 +1,6 @@
+require("dotenv").config();
+const PUBLIC_VAPID_KEY = process.env.PUBLIC_VAPID_KEY;
+
 const express = require("express");
 const router = express.Router();
 
@@ -13,7 +16,7 @@ router.get("/", (req, res) => {
   switch (errorSetter) {
     case 200:
       mockData = {
-        key: "",
+        key: PUBLIC_VAPID_KEY,
       };
       break;
     case 401:

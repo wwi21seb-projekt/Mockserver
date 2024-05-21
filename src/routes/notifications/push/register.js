@@ -13,12 +13,12 @@ const PRIVATE_VAPID_KEY = process.env.PRIVATE_VAPID_KEY;
 */
 let errorSetter = 201;
 let mockData;
-const mockPushNotification = false;
 
 router.post("/", (req, res) => {
   switch (errorSetter) {
     case 201:
-      const subscription = req.body;
+      const subscription = req.body.subscription;
+      console.log("subscription", subscription);
 
       webpush.setVapidDetails(
         "mailto:example@yourdomain.org",
@@ -28,14 +28,23 @@ router.post("/", (req, res) => {
 
       // Senden Sie eine Push-Benachrichtigung nach 10 Sekunden
       setTimeout(() => {
-        const payload = JSON.stringify({ title: "Push-Benachrichtigung" });
+        const payload = JSON.stringify({
+          notificationId: "866bea46-e71b-4c68-a67c-c34a0908b4ef",
+          timestamp: "2024-05-18T17:21:22+00:00",
+          notificationType: "follow", // follow, repost,
+          user: {
+            username: "tina",
+            nickname: "titi",
+            profilePictureUrl: "",
+          },
+        });
 
         webpush.sendNotification(subscription, payload).catch((error) => {
           console.error(error.stack);
         });
 
         console.log("Push notification sent");
-      }, 10000);
+      }, 1000);
 
       break;
     case 401:

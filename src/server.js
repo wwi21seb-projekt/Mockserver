@@ -60,6 +60,14 @@ app.use(
   `/api/subscriptions/:subscriptionId`,
   require("./routes/users/nutzersuche-feed-abonnement/unfollow")
 );
+app.use(
+  `/api/users/:username/reset-password`,
+  require("./routes/users/passwordReset/pwReset.js")
+);
+app.use(
+  `/api/users/:username/reset-passwort`,
+  require("./routes/users/passwordReset/newPassword.js")
+);
 
 //posts
 app.use(`/api/posts`, require("./routes/posts/createPost"));
@@ -106,6 +114,11 @@ app.use(
   `/api/posts/:postId/comments`,
   require("./routes/posts/Interactions/getComments.js")
 );
+
+//chats
+app.use(`/api/chats`, require("./routes/chats/getAllChatUsers"));
+app.use(`/api/chats/:chatId`, require("./routes/chats/getMessage"));
+app.use(`/api/chats`, require("./routes/chats/createChat.js"));
 
 // Starte den Server
 app.listen(port, host, () => {

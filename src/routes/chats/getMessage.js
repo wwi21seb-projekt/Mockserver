@@ -6,7 +6,7 @@ const router = express.Router();
 401: Unauthorized
 404: Not Found
 */
-const errorSetter = 204;
+const errorSetter = 200;
 let mockData;
 
 // Beispiel-Endpunkt für Benutzer (/api/users)
@@ -22,9 +22,29 @@ router.get("/", (req, res) => {
       mockData = {
         records: [
           {
-            content: "Hello", //256 Zeichen, utf8
+            content: "Hallo", //256 Zeichen, utf8
             username: "timpaul",
             creationDate: "2021-06-01T12:00:00Z",
+          },
+          {
+            content: "Hey", //256 Zeichen, utf8
+            username: "yourOwnUser",
+            creationDate: "2021-06-01T13:00:00Z",
+          },
+          {
+            content: "Bei mir regnet es", //256 Zeichen, utf8
+            username: "timpaul",
+            creationDate: "2021-06-01T14:00:00Z",
+          },
+          {
+            content: "Bei mir nicht", //256 Zeichen, utf8
+            username: "yourOwnUser",
+            creationDate: "2021-06-01T15:00:00Z",
+          },
+          {
+            content: "Bei mir scheint die Sonne", //256 Zeichen, utf8
+            username: "yourOwnUser",
+            creationDate: "2021-06-01T16:00:00Z",
           },
         ],
         pagination: {

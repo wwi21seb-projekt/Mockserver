@@ -6,7 +6,7 @@ const router = express.Router();
 401: Unauthorized
 404: Not Found
 */
-const errorSetter = 204;
+const errorSetter = 200;
 let mockData;
 
 // Beispiel-Endpunkt für Benutzer (/api/users)

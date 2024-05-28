@@ -1,9 +1,11 @@
 const express = require("express");
-const app = express();
+var app = express();
+var expressWs = require("express-ws")(app);
 const port = 3000;
 const host = "0.0.0.0";
 const apiVersion = "v1";
 const cors = require("cors");
+const router = require("./routes/posts/createPost");
 
 // Middleware für das Protokollieren von Anfragen
 app.use((req, res, next) => {
@@ -119,6 +121,7 @@ app.use(
 app.use(`/api/chats`, require("./routes/chats/getAllChatUsers"));
 app.use(`/api/chats/:chatId`, require("./routes/chats/getMessage"));
 app.use(`/api/chats`, require("./routes/chats/createChat.js"));
+app.use("/", require("./routes/chats/webSocket.js"));
 
 // Starte den Server
 app.listen(port, host, () => {

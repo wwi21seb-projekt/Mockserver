@@ -15,9 +15,17 @@ router.ws("/", function (ws, req) {
 
   ws.on("message", function (msg) {
     // Senden Sie die Nachricht an alle verbundenen Clients
+    const message = {
+      content: msg,
+      creationDate: new Date().toISOString(),
+      username: "timpaul",
+    };
+    console.log("Received message: ", message);
+    const encoder = new TextEncoder();
+    const encodedMessage = encoder.encode(JSON.stringify(message));
     clients.forEach((client) => {
       if (client.readyState === WebSocket.OPEN) {
-        client.send(msg);
+        client.send(encodedMessage);
       }
     });
   });

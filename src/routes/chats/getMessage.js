@@ -8,6 +8,7 @@ const router = express.Router();
 */
 const errorSetter = 200;
 let mockData;
+const ownUser = "test_user";
 
 // Beispiel-Endpunkt für Benutzer (/api/users)
 router.get("/", (req, res) => {
@@ -28,7 +29,7 @@ router.get("/", (req, res) => {
           },
           {
             content: "Hey", //256 Zeichen, utf8
-            username: "yourOwnUser",
+            username: ownUser,
             creationDate: "2021-06-01T13:00:00Z",
           },
           {
@@ -38,12 +39,12 @@ router.get("/", (req, res) => {
           },
           {
             content: "Bei mir nicht", //256 Zeichen, utf8
-            username: "yourOwnUser",
+            username: ownUser,
             creationDate: "2021-06-01T15:00:00Z",
           },
           {
             content: "Bei mir scheint die Sonne", //256 Zeichen, utf8
-            username: "yourOwnUser",
+            username: ownUser,
             creationDate: "2021-06-01T16:00:00Z",
           },
         ],

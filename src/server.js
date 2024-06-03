@@ -121,7 +121,7 @@ app.use(
 app.use(`/api/chats`, require("./routes/chats/getAllChatUsers"));
 app.use(`/api/chats/:chatId`, require("./routes/chats/getMessage"));
 app.use(`/api/chats`, require("./routes/chats/createChat.js"));
-app.use("/", require("./routes/chats/webSocket.js"));
+app.use("/api/chat", require("./routes/chats/webSocket.js"));
 
 // Starte den Server
 app.listen(port, host, () => {

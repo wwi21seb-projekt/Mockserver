@@ -12,6 +12,7 @@ let mockData;
 
 router.post("/", (req, res) => {
   /* req.body = { "content": "",
+                  "picture": "", //optional, base64 encoded, leerer String = nicht vorhanden
                   "location": 
                       {
                         "latitude": 0,
@@ -28,10 +29,20 @@ router.post("/", (req, res) => {
         author: {
           username: "test_user",
           nickname: "test_user",
-          profilePictureUrl: "",
+          picture: {
+            url: "",
+            width: 123, //int
+            height: 123, //int
+          }, //optional
         },
         creationDate: "datetime+UTC",
         content: "This is a post", //UTF-8
+        picture: {
+          url: "",
+          width: 123, //int
+          height: 123, //int
+          tag: 123445,
+        }, //optional
         likes: 123,
         liked: false,
         likes: 123,
@@ -41,7 +52,11 @@ router.post("/", (req, res) => {
           author: {
             username: "test_user",
             nickname: "test_user",
-            profilePictureUrl: "",
+            picture: {
+              url: "",
+              width: 123, //int
+              height: 123, //int
+            }, //optional
           },
           content: "This is a post", //UTF-8
           creationDate: "datetime+UTC",

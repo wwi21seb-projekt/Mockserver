@@ -20,7 +20,11 @@ router.get("/", (req, res) => {
             user: {
               username: "timpaul",
               nickname: "TP",
-              profilePictureUrl: "",
+              picture: {
+                url: "",
+                width: 123, //int
+                height: 123, //int
+              }, //optional
             },
           },
           {
@@ -28,7 +32,11 @@ router.get("/", (req, res) => {
             user: {
               username: "johndoe",
               nickname: "JD",
-              profilePictureUrl: "",
+              picture: {
+                url: "",
+                width: 123, //int
+                height: 123, //int
+              }, //optional
             },
           },
           {
@@ -36,7 +44,11 @@ router.get("/", (req, res) => {
             user: {
               username: "janedoe",
               nickname: "JD",
-              profilePictureUrl: "",
+              picture: {
+                url: "",
+                width: 123, //int
+                height: 123, //int
+              }, //optional
             },
           },
           {
@@ -44,7 +56,11 @@ router.get("/", (req, res) => {
             user: {
               username: "alexsmith",
               nickname: "AS",
-              profilePictureUrl: "",
+              picture: {
+                url: "",
+                width: 123, //int
+                height: 123, //int
+              }, //optional
             },
           },
         ],

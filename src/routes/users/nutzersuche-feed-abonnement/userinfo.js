@@ -17,7 +17,12 @@ router.get("/", (req, res) => {
         nickname: "test_user_nickname",
         status:
           "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquy", //UTF-8, 128 Zeichen
-        profilePictureUrl: "",
+        picture: {
+          url: "",
+          width: 123, //int
+          height: 123, //int
+          tag: 123445,
+        }, //optional
         follower: 123,
         following: 3467,
         posts: 23,

@@ -23,7 +23,11 @@ router.get("/", (req, res) => {
             author: {
               username: "testtest",
               nickname: "test",
-              profilePictureURL: "",
+              picture: {
+                url: "",
+                width: 123, //int
+                height: 123, //int
+              }, //optional
             },
             creationDate: "2007-03-04T13:00:00Z",
           },
@@ -33,19 +37,28 @@ router.get("/", (req, res) => {
             author: {
               username: "testtest",
               nickname: "test",
-              profilePictureURL: "",
+              picture: {
+                url: "",
+                width: 123, //int
+                height: 123, //int
+              }, //optional
             },
             creationDate: "2007-04-04T13:00:00Z",
-          },{
+          },
+          {
             commentId: "539328e8-8750-4f42-9d53-d31403277c33",
             content: "rsdfdsggtgergt",
             author: {
               username: "testtesttest",
               nickname: "testasdf",
-              profilePictureURL: "",
+              picture: {
+                url: "",
+                width: 123, //int
+                height: 123, //int
+              }, //optional
             },
             creationDate: "2007-03-05T13:00:00Z",
-          }
+          },
         ],
         pagination: {
           offset: offset,

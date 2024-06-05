@@ -35,7 +35,11 @@ router.post("/", (req, res) => {
           user: {
             username: "tina",
             nickname: "titi",
-            profilePictureUrl: "",
+            picture: {
+              url: "",
+              width: 123, //int
+              height: 123, //int
+            }, //optional
           },
         });
 

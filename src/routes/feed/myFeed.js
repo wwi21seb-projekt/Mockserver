@@ -16,10 +16,19 @@ const postsGlobal = [
     author: {
       username: "test_name_01",
       nickname: "test_nickname_01",
-      profilePictureUrl: "",
+      picture: {
+        url: "",
+        width: 123, //int
+        height: 123, //int
+      }, //optional
     },
     creationDate: "2011-03-01T13:00:00Z",
     content: "Global Post 1", //UTF-8
+    picture: {
+      url: "",
+      width: 123, //int
+      height: 123, //int
+    }, //optional
     location: {
       latitude: 0,
       longitude: 0,
@@ -32,7 +41,12 @@ const postsGlobal = [
       author: {
         username: "test_user",
         nickname: "test_user",
-        profilePictureUrl: "",
+        picture: {
+          url: "",
+          width: 123, //int
+          height: 123, //int
+          tag: 123445,
+        }, //optional
       },
       content: "This is a post", //UTF-8
       creationDate: "datetime+UTC",
@@ -48,10 +62,19 @@ const postsGlobal = [
     author: {
       username: "test_name_01",
       nickname: "test_nickname_01",
-      profilePictureUrl: "",
+      picture: {
+        url: "",
+        width: 123, //int
+        height: 123, //int
+      }, //optional
     },
     creationDate: "2010-03-01T13:00:00Z",
     content: "Global Post 2", //UTF-8
+    picture: {
+      url: "",
+      width: 123, //int
+      height: 123, //int
+    }, //optional
     location: {
       latitude: 0,
       longitude: 0,
@@ -64,7 +87,12 @@ const postsGlobal = [
       author: {
         username: "test_user",
         nickname: "test_user",
-        profilePictureUrl: "",
+        picture: {
+          url: "",
+          width: 123, //int
+          height: 123, //int
+          tag: 123445,
+        }, //optional
       },
       content: "This is a post", //UTF-8
       creationDate: "datetime+UTC",
@@ -80,7 +108,11 @@ const postsGlobal = [
     author: {
       username: "test_name_01",
       nickname: "test_nickname_01",
-      profilePictureUrl: "",
+      picture: {
+        url: "",
+        width: 123, //int
+        height: 123, //int
+      }, //optional
     },
     creationDate: "2010-03-01T13:00:00Z",
     content: "Global Post 3", //UTF-8
@@ -96,7 +128,12 @@ const postsGlobal = [
       author: {
         username: "test_user",
         nickname: "test_user",
-        profilePictureUrl: "",
+        picture: {
+          url: "",
+          width: 123, //int
+          height: 123, //int
+          tag: 123445,
+        }, //optional
       },
       content: "This is a post", //UTF-8
       creationDate: "datetime+UTC",
@@ -112,7 +149,11 @@ const postsGlobal = [
     author: {
       username: "test_name_01",
       nickname: "test_nickname_01",
-      profilePictureUrl: "",
+      picture: {
+        url: "",
+        width: 123, //int
+        height: 123, //int
+      }, //optional
     },
     creationDate: "2010-03-01T13:00:00Z",
     content: "Global Post 4", //UTF-8
@@ -128,7 +169,12 @@ const postsGlobal = [
       author: {
         username: "test_user",
         nickname: "test_user",
-        profilePictureUrl: "",
+        picture: {
+          url: "",
+          width: 123, //int
+          height: 123, //int
+          tag: 123445,
+        }, //optional
       },
       content: "This is a post", //UTF-8
       creationDate: "datetime+UTC",
@@ -144,7 +190,11 @@ const postsGlobal = [
     author: {
       username: "test_name_01",
       nickname: "test_nickname_01",
-      profilePictureUrl: "",
+      picture: {
+        url: "",
+        width: 123, //int
+        height: 123, //int
+      }, //optional
     },
     creationDate: "2010-03-01T13:00:00Z",
     content: "Global Post 5", //UTF-8
@@ -160,9 +210,19 @@ const postsGlobal = [
       author: {
         username: "test_user",
         nickname: "test_user",
-        profilePictureUrl: "",
+        picture: {
+          url: "",
+          width: 123, //int
+          height: 123, //int
+          tag: 123445,
+        }, //optional
       },
       content: "This is a post", //UTF-8
+      picture: {
+        url: "",
+        width: 123, //int
+        height: 123, //int
+      }, //optional
       creationDate: "datetime+UTC",
       location: {
         latitude: 0,
@@ -176,7 +236,11 @@ const postsGlobal = [
     author: {
       username: "test_name_01",
       nickname: "test_nickname_01",
-      profilePictureUrl: "",
+      picture: {
+        url: "",
+        width: 123, //int
+        height: 123, //int
+      }, //optional
     },
     creationDate: "2010-03-01T13:00:00Z",
     content: "Global Post 6", //UTF-8
@@ -192,7 +256,12 @@ const postsGlobal = [
       author: {
         username: "test_user",
         nickname: "test_user",
-        profilePictureUrl: "",
+        picture: {
+          url: "",
+          width: 123, //int
+          height: 123, //int
+          tag: 123445,
+        }, //optional
       },
       content: "This is a post", //UTF-8
       creationDate: "datetime+UTC",
@@ -208,7 +277,11 @@ const postsGlobal = [
     author: {
       username: "test_name_01",
       nickname: "test_nickname_01",
-      profilePictureUrl: "",
+      picture: {
+        url: "",
+        width: 123, //int
+        height: 123, //int
+      }, //optional
     },
     creationDate: "2010-03-01T13:00:00Z",
     content: "Global Post 7", //UTF-8
@@ -224,7 +297,12 @@ const postsGlobal = [
       author: {
         username: "test_user",
         nickname: "test_user",
-        profilePictureUrl: "",
+        picture: {
+          url: "",
+          width: 123, //int
+          height: 123, //int
+          tag: 123445,
+        }, //optional
       },
       content: "This is a post", //UTF-8
       creationDate: "datetime+UTC",
@@ -241,7 +319,11 @@ const postsGlobal = [
     author: {
       username: "test_name_01",
       nickname: "test_nickname_01",
-      profilePictureUrl: "",
+      picture: {
+        url: "",
+        width: 123, //int
+        height: 123, //int
+      }, //optional
     },
     creationDate: "2010-03-01T13:00:00Z",
     content: "Global Post 8", //UTF-8
@@ -257,7 +339,12 @@ const postsGlobal = [
       author: {
         username: "test_user",
         nickname: "test_user",
-        profilePictureUrl: "",
+        picture: {
+          url: "",
+          width: 123, //int
+          height: 123, //int
+          tag: 123445,
+        }, //optional
       },
       content: "This is a post", //UTF-8
       creationDate: "datetime+UTC",
@@ -273,7 +360,11 @@ const postsGlobal = [
     author: {
       username: "test_name_01",
       nickname: "test_nickname_01",
-      profilePictureUrl: "",
+      picture: {
+        url: "",
+        width: 123, //int
+        height: 123, //int
+      }, //optional
     },
     creationDate: "2010-03-01T13:00:00Z",
     content: "Global Post 9", //UTF-8
@@ -289,7 +380,12 @@ const postsGlobal = [
       author: {
         username: "test_user",
         nickname: "test_user",
-        profilePictureUrl: "",
+        picture: {
+          url: "",
+          width: 123, //int
+          height: 123, //int
+          tag: 123445,
+        }, //optional
       },
       content: "This is a post", //UTF-8
       creationDate: "datetime+UTC",
@@ -305,7 +401,11 @@ const postsGlobal = [
     author: {
       username: "test_name_01",
       nickname: "test_nickname_01",
-      profilePictureUrl: "",
+      picture: {
+        url: "",
+        width: 123, //int
+        height: 123, //int
+      }, //optional
     },
     creationDate: "2010-03-01T13:00:00Z",
     content: "Global Post 10", //UTF-8
@@ -321,7 +421,12 @@ const postsGlobal = [
       author: {
         username: "test_user",
         nickname: "test_user",
-        profilePictureUrl: "",
+        picture: {
+          url: "",
+          width: 123, //int
+          height: 123, //int
+          tag: 123445,
+        }, //optional
       },
       content: "This is a post", //UTF-8
       creationDate: "datetime+UTC",
@@ -337,7 +442,11 @@ const postsGlobal = [
     author: {
       username: "test_name_03",
       nickname: "test_nickname_03",
-      profilePictureUrl: "",
+      picture: {
+        url: "",
+        width: 123, //int
+        height: 123, //int
+      }, //optional
     },
     creationDate: "2007-03-01T13:00:00Z",
     content: "Global Post 11", //UTF-8
@@ -353,9 +462,19 @@ const postsGlobal = [
       author: {
         username: "test_user",
         nickname: "test_user",
-        profilePictureUrl: "",
+        picture: {
+          url: "",
+          width: 123, //int
+          height: 123, //int
+          tag: 123445,
+        }, //optional
       },
       content: "This is a post", //UTF-8
+      picture: {
+        url: "",
+        width: 123, //int
+        height: 123, //int
+      }, //optional
       creationDate: "datetime+UTC",
       location: {
         latitude: 0,
@@ -371,7 +490,11 @@ const postsPersonal = [
     author: {
       username: "test_name_011",
       nickname: "test_nickname_011",
-      profilePictureUrl: "",
+      picture: {
+        url: "",
+        width: 123, //int
+        height: 123, //int
+      }, //optional
     },
     creationDate: "2011-03-01T13:00:00Z",
     content: "Personal Post 1", //UTF-8
@@ -387,7 +510,12 @@ const postsPersonal = [
       author: {
         username: "test_user",
         nickname: "test_user",
-        profilePictureUrl: "",
+        picture: {
+          url: "",
+          width: 123, //int
+          height: 123, //int
+          tag: 123445,
+        }, //optional: "",
       },
       content: "This is a post", //UTF-8
       creationDate: "datetime+UTC",
@@ -403,7 +531,11 @@ const postsPersonal = [
     author: {
       username: "test_name_010",
       nickname: "test_nickname_0999",
-      profilePictureUrl: "",
+      picture: {
+        url: "",
+        width: 123, //int
+        height: 123, //int
+      }, //optional
     },
     creationDate: "2010-03-01T13:00:00Z",
     content: "Personal Post 2", //UTF-8
@@ -419,7 +551,12 @@ const postsPersonal = [
       author: {
         username: "test_user",
         nickname: "test_user",
-        profilePictureUrl: "",
+        picture: {
+          url: "",
+          width: 123, //int
+          height: 123, //int
+          tag: 123445,
+        }, //optional
       },
       content: "This is a post", //UTF-8
       creationDate: "datetime+UTC",
@@ -435,7 +572,11 @@ const postsPersonal = [
     author: {
       username: "test_name_0301",
       nickname: "test_nickname_0301",
-      profilePictureUrl: "",
+      picture: {
+        url: "",
+        width: 123, //int
+        height: 123, //int
+      }, //optional
     },
     creationDate: "2007-03-01T13:00:00Z",
     content: "Personal Post 3", //UTF-8
@@ -451,7 +592,12 @@ const postsPersonal = [
       author: {
         username: "test_user",
         nickname: "test_user",
-        profilePictureUrl: "",
+        picture: {
+          url: "",
+          width: 123, //int
+          height: 123, //int
+          tag: 123445,
+        }, //optional
       },
       content: "This is a post", //UTF-8
       creationDate: "datetime+UTC",

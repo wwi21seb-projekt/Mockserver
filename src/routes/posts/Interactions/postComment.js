@@ -23,7 +23,11 @@ router.post("/", (req, res) => {
         author: {
           username: "",
           nickname: "",
-          profilePictureURL: "",
+          picture: {
+            url: "",
+            width: 123, //int
+            height: 123, //int
+          }, //optional
         },
         creationDate: "2007-03-04T13:00:00Z",
       };

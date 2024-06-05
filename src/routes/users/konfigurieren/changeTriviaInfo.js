@@ -10,12 +10,21 @@ let errorSetter = 200;
 let mockData;
 
 router.put("/", (req, res) => {
-  //req - body = { nickname: "", status: "" ,} // always give full information
+  //req - body = {
+  //   nickname: "",
+  //   status: "" ,
+  //   picture: "" //optional base64 encoded, leerer String = LÖSCHEN, null = es passiert nichts
+  // } // always give full information
   switch (errorSetter) {
     case 200:
       mockData = {
         nickname: "",
         status: "",
+        picture: {
+          url: "",
+          width: 123, //int
+          height: 123, //int
+        }, //optional
       };
       break;
     case 400:

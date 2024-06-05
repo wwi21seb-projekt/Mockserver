@@ -17,6 +17,12 @@ router.post("/", (req, res) => {
         username: "test_name",
         nickname: "test name2", // optional
         email: "test@test.de",
+        picture: {
+          url: "",
+          width: 123, //int
+          height: 123, //int
+          tag: 123445,
+        }, //optional
       };
       break;
     case 400:

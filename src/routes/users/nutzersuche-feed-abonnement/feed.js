@@ -25,7 +25,12 @@ const Posts = [
       author: {
         username: "test_user",
         nickname: "test_user",
-        profilePictureUrl: "",
+        picture: {
+          url: "",
+          width: 123, //int
+          height: 123, //int
+          tag: 123445,
+        }, //optional
       },
       content: "This is a post", //UTF-8
       creationDate: "datetime+UTC",
@@ -52,7 +57,12 @@ const Posts = [
       author: {
         username: "test_user",
         nickname: "test_user",
-        profilePictureUrl: "",
+        picture: {
+          url: "",
+          width: 123, //int
+          height: 123, //int
+          tag: 123445,
+        }, //optional
       },
       content: "This is a post", //UTF-8
       creationDate: "datetime+UTC",
@@ -79,7 +89,12 @@ const Posts = [
       author: {
         username: "test_user",
         nickname: "test_user",
-        profilePictureUrl: "",
+        picture: {
+          url: "",
+          width: 123, //int
+          height: 123, //int
+          tag: 123445,
+        }, //optional
       },
       content: "This is a post", //UTF-8
       creationDate: "datetime+UTC",
@@ -106,7 +121,12 @@ const Posts = [
       author: {
         username: "test_user",
         nickname: "test_user",
-        profilePictureUrl: "",
+        picture: {
+          url: "",
+          width: 123, //int
+          height: 123, //int
+          tag: 123445,
+        }, //optional
       },
       content: "This is a post", //UTF-8
       creationDate: "datetime+UTC",
@@ -133,7 +153,12 @@ const Posts = [
       author: {
         username: "test_user",
         nickname: "test_user",
-        profilePictureUrl: "",
+        picture: {
+          url: "",
+          width: 123, //int
+          height: 123, //int
+          tag: 123445,
+        }, //optional
       },
       content: "This is a post", //UTF-8
       creationDate: "datetime+UTC",
@@ -161,7 +186,12 @@ const Posts = [
       author: {
         username: "test_user",
         nickname: "test_user",
-        profilePictureUrl: "",
+        picture: {
+          url: "",
+          width: 123, //int
+          height: 123, //int
+          tag: 123445,
+        }, //optional
       },
       content: "This is a post", //UTF-8
       creationDate: "datetime+UTC",
@@ -188,7 +218,12 @@ const Posts = [
       author: {
         username: "test_user",
         nickname: "test_user",
-        profilePictureUrl: "",
+        picture: {
+          url: "",
+          width: 123, //int
+          height: 123, //int
+          tag: 123445,
+        }, //optional
       },
       content: "This is a post", //UTF-8
       creationDate: "datetime+UTC",
@@ -215,7 +250,12 @@ const Posts = [
       author: {
         username: "test_user",
         nickname: "test_user",
-        profilePictureUrl: "",
+        picture: {
+          url: "",
+          width: 123, //int
+          height: 123, //int
+          tag: 123445,
+        }, //optional
       },
       content: "This is a post", //UTF-8
       creationDate: "datetime+UTC",
@@ -242,7 +282,12 @@ const Posts = [
       author: {
         username: "test_user",
         nickname: "test_user",
-        profilePictureUrl: "",
+        picture: {
+          url: "",
+          width: 123, //int
+          height: 123, //int
+          tag: 123445,
+        }, //optional
       },
       content: "This is a post", //UTF-8
       creationDate: "datetime+UTC",
@@ -269,7 +314,12 @@ const Posts = [
       author: {
         username: "test_user",
         nickname: "test_user",
-        profilePictureUrl: "",
+        picture: {
+          url: "",
+          width: 123, //int
+          height: 123, //int
+          tag: 123445,
+        }, //optional
       },
       content: "This is a post", //UTF-8
       creationDate: "datetime+UTC",
@@ -297,7 +347,12 @@ const Posts = [
       author: {
         username: "test_user",
         nickname: "test_user",
-        profilePictureUrl: "",
+        picture: {
+          url: "",
+          width: 123, //int
+          height: 123, //int
+          tag: 123445,
+        }, //optional
       },
       content: "This is a post", //UTF-8
       creationDate: "datetime+UTC",

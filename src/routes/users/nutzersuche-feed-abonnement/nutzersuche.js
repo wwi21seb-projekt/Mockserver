@@ -13,62 +13,110 @@ const user = [
   {
     username: "test_user",
     nickname: "test_user_nickname",
-    profilePictureUrl: "",
+    picture: {
+      url: "",
+      width: 123, //int
+      height: 123, //int
+    }, //optional
   },
   {
     username: "test_user2",
     nickname: "test_user_nickname2",
-    profilePictureUrl: "",
+    picture: {
+      url: "",
+      width: 123, //int
+      height: 123, //int
+    }, //optional
   },
   {
     username: "test_user3",
     nickname: "test_user_nickname3",
-    profilePictureUrl: "",
+    picture: {
+      url: "",
+      width: 123, //int
+      height: 123, //int
+    }, //optional
   },
   {
     username: "test_user4",
     nickname: "test_user_nickname4",
-    profilePictureUrl: "",
+    picture: {
+      url: "",
+      width: 123, //int
+      height: 123, //int
+    }, //optional
   },
   {
     username: "test_user5",
     nickname: "test_user_nickname5",
-    profilePictureUrl: "",
+    picture: {
+      url: "",
+      width: 123, //int
+      height: 123, //int
+    }, //optional
   },
   {
     username: "test_user6",
     nickname: "test_user_nickname6",
-    profilePictureUrl: "",
+    picture: {
+      url: "",
+      width: 123, //int
+      height: 123, //int
+    }, //optional
   },
   {
     username: "test_user7",
     nickname: "test_user_nickname7",
-    profilePictureUrl: "",
+    picture: {
+      url: "",
+      width: 123, //int
+      height: 123, //int
+    }, //optional
   },
   {
     username: "test_user8",
     nickname: "test_user_nickname",
-    profilePictureUrl: "",
+    picture: {
+      url: "",
+      width: 123, //int
+      height: 123, //int
+    }, //optional
   },
   {
     username: "test_user9",
     nickname: "test_user_nickname9",
-    profilePictureUrl: "",
+    picture: {
+      url: "",
+      width: 123, //int
+      height: 123, //int
+    }, //optional
   },
   {
     username: "test_user10",
     nickname: "test_user_nickname10",
-    profilePictureUrl: "",
+    picture: {
+      url: "",
+      width: 123, //int
+      height: 123, //int
+    }, //optional
   },
   {
     username: "test_user11",
     nickname: "test_user_nickname11",
-    profilePictureUrl: "",
+    picture: {
+      url: "",
+      width: 123, //int
+      height: 123, //int
+    }, //optional
   },
   {
     username: "test_user12",
     nickname: "test_user_nickname12",
-    profilePictureUrl: "",
+    picture: {
+      url: "",
+      width: 123, //int
+      height: 123, //int
+    }, //optional
   },
 ];
 

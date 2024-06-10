@@ -17,8 +17,8 @@ router.delete("/", (req, res) => {
     case 401:
       mockData = {
         error: {
-          code: "ERR-014",
-          message: "unauthorized",
+          code: "ERR-024",
+          message: "You are not authorized to delete this notification.",
         },
       };
       break;

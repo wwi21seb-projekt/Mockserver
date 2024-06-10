@@ -58,16 +58,17 @@ router.get("/", (req, res) => {
     case 401:
       mockData = {
         error: {
-          message: "Not authorized",
-          code: "ERR-???",
+          message: "The request is unauthorized. Please login to your account.",
+          code: "ERR-014",
         },
       };
       break;
     case 404:
       mockData = {
         error: {
-          message: "Chat not found",
-          code: "ERR-???",
+          message:
+            "The chat was not found. Please check the chatId and try again.",
+          code: "ERR-027",
         },
       };
       break;

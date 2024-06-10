@@ -5,7 +5,7 @@ const router = express.Router();
 200: Ok
 404: Not Found
 */
-const errorSetter = 204;
+const errorSetter = 200;
 let mockData;
 
 // Beispiel-Endpunkt für Benutzer (/api/users)

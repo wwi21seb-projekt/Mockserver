@@ -33,32 +33,35 @@ router.post("/", (req, res) => {
     case 400:
       mockData = {
         error: {
-          message: "Bad request",
-          code: "ERR-???",
+          code: "ERR-001",
+          message:
+            "The request body is invalid. Please check the request body and try again.",
         },
       };
       break;
     case 401:
       mockData = {
         error: {
-          message: "Not authorized",
-          code: "ERR-???",
+          message: "The request is unauthorized. Please login to your account.",
+          code: "ERR-014",
         },
       };
       break;
     case 404:
       mockData = {
         error: {
-          message: "User not found",
-          code: "ERR-???",
+          message:
+            "The user was not found. Please check the username and try again.",
+          code: "ERR-404",
         },
       };
       break;
     case 409:
       mockData = {
         error: {
-          message: "Chat already exists",
-          code: "ERR-???",
+          message:
+            "The chat already exists. Please check the username and try again.",
+          code: "ERR-026",
         },
       };
       break;

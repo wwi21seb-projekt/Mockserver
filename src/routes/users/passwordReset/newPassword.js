@@ -22,18 +22,18 @@ router.patch("/", (req, res) => {
     case 204:
       break;
     case 403:
+      // mockData = {
+      //   error: {
+      //     message:
+      //       "The token is invalid. Please check the token and try again.",
+      //     code: "ERR-004",
+      //   },
+      // };
       mockData = {
         error: {
           message:
-            "The token is invalid. Please check the token and try again.",
-          code: "ERR-004",
-        },
-      };
-      mockData = {
-        error: {
-          message:
-            "The token is invalid for the user. Please check the token and try again.",
-          code: "ERR-???",
+            "The password reset token is invalid or has expired. Please request a new token and try again.",
+          code: "ERR-025",
         },
       };
       break;
@@ -42,7 +42,7 @@ router.patch("/", (req, res) => {
         error: {
           message:
             "The user was not found. Please check the username and try again.",
-          code: "ERR-???",
+          code: "ERR-004",
         },
       };
       break;
@@ -51,7 +51,7 @@ router.patch("/", (req, res) => {
         error: {
           message:
             "The request body is invalid. Please check the request body and try again.",
-          code: "ERR-004",
+          code: "ERR-001",
         },
       };
       break;

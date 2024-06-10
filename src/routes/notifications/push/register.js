@@ -55,15 +55,16 @@ router.post("/", (req, res) => {
       mockData = {
         error: {
           code: "ERR-014",
-          message: "unauthorized",
+          message: "The request is unauthorized. Please login to your account.",
         },
       };
       break;
     case 400:
       mockData = {
         error: {
-          code: "ERR-???",
-          message: "Bad request",
+          code: "ERR-001",
+          message:
+            "The request body is invalid. Please check the request body and try again.",
         },
       };
       break;

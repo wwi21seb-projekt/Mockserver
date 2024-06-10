@@ -26,8 +26,8 @@ router.delete("/", (req, res) => {
       mockData = {
         error: {
           message:
-            "The post was not found. Please check the post ID and try again.",
-          code: "ERR-020",
+            "The notification was not found. Please check the notification ID and try again.",
+          code: "ERR-023",
         },
       };
       break;

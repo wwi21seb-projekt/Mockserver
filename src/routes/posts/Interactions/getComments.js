@@ -78,8 +78,9 @@ router.get("/", (req, res) => {
     case 404:
       mockData = {
         error: {
-          message: "Post not found",
-          code: "ERR-XXX",
+          message:
+            "The post was not found. Please check the postId and try again.",
+          code: "ERR-020",
         },
       };
       break;

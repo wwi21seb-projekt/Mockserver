@@ -45,6 +45,20 @@ router.get("/", (req, res) => {
             },
           },
           {
+            notificationId: "866bea46-e71b-4c68-a67c-c34a0908b357",
+            timestamp: "2024-05-18T17:21:22+00:00",
+            notificationType: "message", // follow, repost, message
+            user: {
+              username: "timpaul",
+              nickname: "titi",
+              picture: {
+                url: "",
+                width: 123, //int
+                height: 123, //int
+              }, //optional
+            },
+          },
+          {
             notificationId: "866bea46-e71b-4c68-a67c-c34a0908b356",
             timestamp: "2024-05-18T07:21:22+00:00",
             notificationType: "repost", // follow, repost,

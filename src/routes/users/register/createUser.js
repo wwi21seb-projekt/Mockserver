@@ -5,7 +5,8 @@ const router = express.Router();
 201: created
 400: Bad Request
 409: User already exists
-422: Email already exists
+409: Email already exists
+422: Email unreachable
  */
 let errorSetter = 201;
 let mockData;

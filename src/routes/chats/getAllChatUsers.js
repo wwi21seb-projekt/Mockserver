@@ -69,9 +69,8 @@ router.get("/", (req, res) => {
     case 401:
       mockData = {
         error: {
-          message:
-            "Unauthorized. Please check the username and password and try again.",
-          code: "ERR-???",
+          message: "The request is unauthorized. Please login to your account.",
+          code: "ERR-014",
         },
       };
       break;

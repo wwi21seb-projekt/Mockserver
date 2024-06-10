@@ -35,8 +35,9 @@ router.post("/", (req, res) => {
     case 400:
       mockData = {
         error: {
-          message: "Bad request",
-          code: "ERR-XXX",
+          message:
+            "The request is invalid. Please check the request and try again.",
+          code: "ERR-001",
         },
       };
       break;
@@ -51,8 +52,9 @@ router.post("/", (req, res) => {
     case 404:
       mockData = {
         error: {
-          message: "Post not found",
-          code: "ERR-XXX",
+          message:
+            "The post was not found. Please check the post ID and try again.",
+          code: "ERR-020",
         },
       };
       break;

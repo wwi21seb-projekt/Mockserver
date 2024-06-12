@@ -20,26 +20,6 @@ const Posts = [
     },
     likes: 123,
     liked: false,
-    repost: {
-      //optional
-      author: {
-        username: "test_user",
-        nickname: "test_user",
-        picture: {
-          url: "",
-          width: 123, //int
-          height: 123, //int
-          tag: 123445,
-        }, //optional
-      },
-      content: "This is a post", //UTF-8
-      creationDate: "datetime+UTC",
-      location: {
-        latitude: 0,
-        longitude: 0,
-        accuracy: 100, //meters
-      },
-    },
   },
   {
     postId: "e24c5b4f-1975-4b55-b3bd-59658fb8ae37",

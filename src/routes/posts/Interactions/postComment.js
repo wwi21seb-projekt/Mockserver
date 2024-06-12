@@ -5,8 +5,8 @@ const router = express.Router();
 201: No content
 400: Bad Request
 401: Unauthorized
-409: Conflict
- */
+404: Not Found
+*/
 let errorSetter = 201;
 let mockData;
 

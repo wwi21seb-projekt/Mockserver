@@ -67,7 +67,7 @@ app.use(
   require("./routes/users/passwordReset/pwReset.js")
 );
 app.use(
-  `/api/users/:username/reset-passwort`,
+  `/api/users/:username/reset-password`,
   require("./routes/users/passwordReset/newPassword.js")
 );
 

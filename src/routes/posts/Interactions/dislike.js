@@ -3,14 +3,14 @@ const router = express.Router();
 
 /* //Codes:
 204: No content
-400: Bad Request
+404: Not Found
 401: Unauthorized
 409: Conflict
  */
 let errorSetter = 204;
 let mockData;
 
-router.post("/", (req, res) => {
+router.delete("/", (req, res) => {
   switch (errorSetter) {
     case 204:
       break;

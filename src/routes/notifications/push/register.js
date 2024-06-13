@@ -6,7 +6,7 @@ const PUBLIC_VAPID_KEY = process.env.PUBLIC_VAPID_KEY;
 const PRIVATE_VAPID_KEY = process.env.PRIVATE_VAPID_KEY;
 
 /* //Codes:
-200: Ok
+201: Created
 400: Bad request
 401: Unauthorized
 

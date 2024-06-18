@@ -58,11 +58,128 @@ router.get("/", (req, res) => {
             },
             creationDate: "2007-03-05T13:00:00Z",
           },
+          {
+            commentId: "539328e8-8750-4f42-9d53-d31409877c33",
+            content: "rterett",
+            author: {
+              username: "testtest",
+              nickname: "test",
+              picture: {
+                url: "",
+                width: 123, //int
+                height: 123, //int
+              }, //optional
+            },
+          },
+          {
+            commentId: "539328e8-8750-4f42-9d53-d31409873c33",
+            content: "rfseefesfefs",
+            author: {
+              username: "testtest",
+              nickname: "test",
+              picture: {
+                url: "",
+                width: 123, //int
+                height: 123, //int
+              }, //optional
+            },
+          },
+          {
+            commentId: "539328e8-8750-4f42-9d53-d31403277c33",
+            content: "rsdfdsggtgergt",
+            author: {
+              username: "testtesttest",
+              nickname: "testasdf",
+              picture: {
+                url: "",
+                width: 123, //int
+                height: 123, //int
+              }, //optional
+            },
+          },
+          {
+            commentId: "539328e8-8750-4f42-9d53-d31409877c33",
+            content: "rterett",
+            author: {
+              username: "testtest",
+              nickname: "test",
+              picture: {
+                url: "",
+                width: 123, //int
+                height: 123, //int
+              }, //optional
+            },
+          },
+          {
+            commentId: "539328e8-8750-4f42-9d53-d31409873c33",
+            content: "rfseefesfefs",
+            author: {
+              username: "testtest",
+              nickname: "test",
+              picture: {
+                url: "",
+                width: 123, //int
+                height: 123, //int
+              }, //optional
+            },
+          },
+          {
+            commentId: "539328e8-8750-4f42-9d53-d31403277c33",
+            content: "rsdfdsggtgergt",
+            author: {
+              username: "testtesttest",
+              nickname: "testasdf",
+              picture: {
+                url: "",
+                width: 123, //int
+                height: 123, //int
+              }, //optional
+            },
+          },
+          {
+            commentId: "539328e8-8750-4f42-9d53-d31409877c33",
+            content: "rterett",
+            author: {
+              username: "testtest",
+              nickname: "test",
+              picture: {
+                url: "",
+                width: 123, //int
+                height: 123, //int
+              }, //optional
+            },
+          },
+          {
+            commentId: "539328e8-8750-4f42-9d53-d31409873c33",
+            content: "rfseefesfefs",
+            author: {
+              username: "testtest",
+              nickname: "test",
+              picture: {
+                url: "",
+                width: 123, //int
+                height: 123, //int
+              }, //optional
+            },
+          },
+          {
+            commentId: "539328e8-8750-4f42-9d53-d31403277c33",
+            content: "rsdfdsggtgergt",
+            author: {
+              username: "testtesttest",
+              nickname: "testasdf",
+              picture: {
+                url: "",
+                width: 123, //int
+                height: 123, //int
+              }, //optional
+            },
+          },
         ],
         pagination: {
           offset: offset,
           limit: limit,
-          records: 3,
+          records: 11,
         },
       };
       break;

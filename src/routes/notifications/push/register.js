@@ -31,7 +31,7 @@ router.post("/", (req, res) => {
         const payload = JSON.stringify({
           notificationId: "866bea46-e71b-4c68-a67c-c34a0908b4ef",
           timestamp: "2024-05-18T17:21:22+00:00",
-          notificationType: "follow", // follow, repost,
+          notificationType: "message", // follow, repost,
           user: {
             username: "tina",
             nickname: "titi",

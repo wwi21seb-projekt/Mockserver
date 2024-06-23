@@ -19,6 +19,7 @@ const Posts = [
       accuracy: 100, //meters
     },
     likes: 123,
+    comments: 12,
     liked: false,
   },
   {
@@ -31,6 +32,7 @@ const Posts = [
       accuracy: 100, //meters
     },
     likes: 123,
+    comments: 12,
     liked: false,
     repost: {
       //optional
@@ -63,6 +65,7 @@ const Posts = [
       accuracy: 100, //meters
     },
     likes: 123,
+    comments: 12,
     liked: false,
     repost: {
       //optional
@@ -95,6 +98,7 @@ const Posts = [
       accuracy: 100, //meters
     },
     likes: 123,
+    comments: 12,
     liked: false,
     repost: {
       //optional
@@ -127,6 +131,7 @@ const Posts = [
       accuracy: 100, //meters
     },
     likes: 123,
+    comments: 12,
     liked: false,
     repost: {
       //optional
@@ -160,6 +165,7 @@ const Posts = [
       accuracy: 100, //meters
     },
     likes: 123,
+    comments: 12,
     liked: false,
     repost: {
       //optional
@@ -192,6 +198,7 @@ const Posts = [
       accuracy: 100, //meters
     },
     likes: 123,
+    comments: 12,
     liked: false,
     repost: {
       //optional
@@ -224,6 +231,7 @@ const Posts = [
       accuracy: 100, //meters
     },
     likes: 123,
+    comments: 12,
     liked: false,
     repost: {
       //optional
@@ -256,6 +264,7 @@ const Posts = [
       accuracy: 100, //meters
     },
     likes: 123,
+    comments: 12,
     liked: false,
     repost: {
       //optional
@@ -288,6 +297,7 @@ const Posts = [
       accuracy: 100, //meters
     },
     likes: 123,
+    comments: 12,
     liked: false,
     repost: {
       //optional
@@ -321,6 +331,7 @@ const Posts = [
       accuracy: 100, //meters
     },
     likes: 123,
+    comments: 12,
     liked: false,
     repost: {
       //optional

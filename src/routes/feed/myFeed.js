@@ -35,6 +35,7 @@ const postsGlobal = [
       accuracy: 100, //meters
     },
     likes: 123,
+    comments: 12,
     liked: false,
     repost: {
       //optional
@@ -81,6 +82,7 @@ const postsGlobal = [
       accuracy: 100, //meters
     },
     likes: 123,
+    comments: 12,
     liked: false,
     repost: {
       //optional
@@ -122,6 +124,7 @@ const postsGlobal = [
       accuracy: 100, //meters
     },
     likes: 123,
+    comments: 12,
     liked: false,
     repost: {
       //optional
@@ -163,6 +166,7 @@ const postsGlobal = [
       accuracy: 100, //meters
     },
     likes: 123,
+    comments: 12,
     liked: false,
     repost: {
       //optional
@@ -204,6 +208,7 @@ const postsGlobal = [
       accuracy: 100, //meters
     },
     likes: 123,
+    comments: 12,
     liked: false,
     repost: {
       //optional
@@ -250,6 +255,7 @@ const postsGlobal = [
       accuracy: 100, //meters
     },
     likes: 123,
+    comments: 12,
     liked: false,
     repost: {
       //optional
@@ -291,6 +297,7 @@ const postsGlobal = [
       accuracy: 100, //meters
     },
     likes: 123,
+    comments: 12,
     liked: false,
     repost: {
       //optional
@@ -333,6 +340,7 @@ const postsGlobal = [
       accuracy: 100, //meters
     },
     likes: 123,
+    comments: 12,
     liked: false,
     repost: {
       //optional
@@ -374,6 +382,7 @@ const postsGlobal = [
       accuracy: 100, //meters
     },
     likes: 123,
+    comments: 12,
     liked: false,
     repost: {
       //optional
@@ -415,6 +424,7 @@ const postsGlobal = [
       accuracy: 100, //meters
     },
     likes: 123,
+    comments: 12,
     liked: false,
     repost: {
       //optional
@@ -456,6 +466,7 @@ const postsGlobal = [
       accuracy: 100, //meters
     },
     likes: 123,
+    comments: 12,
     liked: false,
     repost: {
       //optional
@@ -504,6 +515,7 @@ const postsPersonal = [
       accuracy: 100, //meters
     },
     likes: 123,
+    comments: 12,
     liked: false,
     repost: {
       //optional
@@ -545,6 +557,7 @@ const postsPersonal = [
       accuracy: 100, //meters
     },
     likes: 123,
+    comments: 12,
     liked: false,
     repost: {
       //optional
@@ -586,6 +599,7 @@ const postsPersonal = [
       accuracy: 100, //meters
     },
     likes: 123,
+    comments: 12,
     liked: false,
     repost: {
       //optional

@@ -44,8 +44,10 @@ router.post("/", (req, res) => {
           tag: 123445,
         }, //optional
         likes: 123,
+        comments: 12,
         liked: false,
         likes: 123,
+        comments: 12,
         liked: false,
         repost: {
           //optional

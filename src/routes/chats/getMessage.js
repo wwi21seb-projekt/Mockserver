@@ -47,11 +47,46 @@ router.get("/", (req, res) => {
             username: ownUser,
             creationDate: "2021-06-01T16:00:00Z",
           },
+          {
+            content: "Bei mir auch", //256 Zeichen, utf8
+            username: "timpaul",
+            creationDate: "2021-06-01T17:00:00Z",
+          },
+          {
+            content: "Hallo", //256 Zeichen, utf8
+            username: "timpaul",
+            creationDate: "2021-06-01T12:00:00Z",
+          },
+          {
+            content: "Hey", //256 Zeichen, utf8
+            username: ownUser,
+            creationDate: "2021-06-01T13:00:00Z",
+          },
+          {
+            content: "Bei mir regnet es", //256 Zeichen, utf8
+            username: "timpaul",
+            creationDate: "2021-06-01T14:00:00Z",
+          },
+          {
+            content: "Bei mir nicht", //256 Zeichen, utf8
+            username: ownUser,
+            creationDate: "2021-06-01T15:00:00Z",
+          },
+          // {
+          //   content: "Bei mir scheint die Sonne", //256 Zeichen, utf8
+          //   username: ownUser,
+          //   creationDate: "2021-06-01T16:00:00Z",
+          // },
+          // {
+          //   content: "Bei mir auch", //256 Zeichen, utf8
+          //   username: "timpaul",
+          //   creationDate: "2021-06-01T17:00:00Z",
+          // },
         ],
         pagination: {
           offset: 0,
           limit: 10,
-          records: 1,
+          records: 12,
         },
       };
       break;

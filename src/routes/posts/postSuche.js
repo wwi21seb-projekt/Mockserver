@@ -15,7 +15,7 @@ const posts = [
       username: "test_name_01",
       nickname: "test_nickname_01",
     },
-    creationDate: "2011-03-01T13:00:00Z",
+    creationDate: "2024-05-01T13:00:00Z",
     content: "Post 1", //UTF-8
     location: {
       latitude: 0,
@@ -38,7 +38,7 @@ const posts = [
         }, //optional
       },
       content: "This is a post", //UTF-8
-      creationDate: "datetime+UTC",
+      creationDate: "2024-05-01T13:00:00",
       location: {
         latitude: 0,
         longitude: 0,
@@ -57,7 +57,7 @@ const posts = [
         height: 123, //int
       }, //optional
     },
-    creationDate: "2011-03-01T13:00:00Z",
+    creationDate: "2024-05-01T13:00:00Z",
     content: "Past 1", //UTF-8
     picture: {
       url: "",
@@ -85,7 +85,7 @@ const posts = [
         }, //optional
       },
       content: "This is a post", //UTF-8
-      creationDate: "datetime+UTC",
+      creationDate: "2024-05-01T13:00:00",
       location: {
         latitude: 0,
         longitude: 0,
@@ -104,7 +104,7 @@ const posts = [
         height: 123, //int
       }, //optional
     },
-    creationDate: "2010-03-01T13:00:00Z",
+    creationDate: "2010-05-01T13:00:00Z",
     content: "Suche nach mir Post 2", //UTF-8
     picture: {
       url: "",
@@ -137,7 +137,7 @@ const posts = [
         width: 123, //int
         height: 123, //int
       }, //optional
-      creationDate: "datetime+UTC",
+      creationDate: "2024-05-01T13:00:00",
       location: {
         latitude: 0,
         longitude: 0,
@@ -156,7 +156,7 @@ const posts = [
         height: 123, //int
       }, //optional
     },
-    creationDate: "2010-03-01T13:00:00Z",
+    creationDate: "2010-05-01T13:00:00Z",
     content: "Hier bin ich! post 3", //UTF-8
     picture: {
       url: "",
@@ -184,7 +184,7 @@ const posts = [
         }, //optional
       },
       content: "This is a post", //UTF-8
-      creationDate: "datetime+UTC",
+      creationDate: "2024-05-01T13:00:00",
       location: {
         latitude: 0,
         longitude: 0,
@@ -203,7 +203,7 @@ const posts = [
         height: 123, //int
       }, //optional
     },
-    creationDate: "2010-03-01T13:00:00Z",
+    creationDate: "2010-05-01T13:00:00Z",
     content: "Na da guckst du! WA?! Post 4", //UTF-8
     location: {
       latitude: 0,
@@ -226,7 +226,7 @@ const posts = [
         }, //optional
       },
       content: "This is a post", //UTF-8
-      creationDate: "datetime+UTC",
+      creationDate: "2024-05-01T13:00:00",
       location: {
         latitude: 0,
         longitude: 0,
@@ -245,7 +245,7 @@ const posts = [
         height: 123, //int
       }, //optional
     },
-    creationDate: "2010-03-01T13:00:00Z",
+    creationDate: "2010-05-01T13:00:00Z",
     content: "Einfach nur nen langweiliger Post 5", //UTF-8
     location: {
       latitude: 0,
@@ -268,7 +268,7 @@ const posts = [
         }, //optional
       },
       content: "This is a post", //UTF-8
-      creationDate: "datetime+UTC",
+      creationDate: "2024-05-01T13:00:00",
       location: {
         latitude: 0,
         longitude: 0,

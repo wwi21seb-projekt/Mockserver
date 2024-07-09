@@ -29,7 +29,7 @@ router.post("/", (req, res) => {
             height: 123, //int
           }, //optional
         },
-        creationDate: "2007-03-04T13:00:00Z",
+        creationDate: "2024-05-04T13:00:00Z",
       };
       break;
     case 400:

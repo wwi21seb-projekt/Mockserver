@@ -7,7 +7,7 @@ const router = express.Router();
 401: Unauthorized
 404: Not found
  */
-let errorSetter = 201;
+let errorSetter = 401;
 let mockData;
 
 router.post("/", (req, res) => {
@@ -35,7 +35,7 @@ router.post("/", (req, res) => {
             height: 123, //int
           }, //optional
         },
-        creationDate: "datetime+UTC",
+        creationDate: "2024-05-01T13:00:00",
         content: "This is a post", //UTF-8
         picture: {
           url: "",
@@ -61,7 +61,7 @@ router.post("/", (req, res) => {
             }, //optional
           },
           content: "This is a post", //UTF-8
-          creationDate: "datetime+UTC",
+          creationDate: "2024-05-01T13:00:00",
           location: {
             latitude: 0,
             longitude: 0,

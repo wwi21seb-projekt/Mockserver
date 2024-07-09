@@ -22,7 +22,7 @@ const postsGlobal = [
         height: 123, //int
       }, //optional
     },
-    creationDate: "2011-03-01T13:00:00Z",
+    creationDate: "2024-05-01T13:00:00Z",
     content: "Global Post 1", //UTF-8
     picture: {
       url: "",
@@ -50,7 +50,7 @@ const postsGlobal = [
         }, //optional
       },
       content: "This is a post", //UTF-8
-      creationDate: "datetime+UTC",
+      creationDate: "2024-05-01T13:00:00",
       location: {
         latitude: 0,
         longitude: 0,
@@ -69,7 +69,7 @@ const postsGlobal = [
         height: 123, //int
       }, //optional
     },
-    creationDate: "2010-03-01T13:00:00Z",
+    creationDate: "2010-05-01T13:00:00Z",
     content: "Global Post 2", //UTF-8
     picture: {
       url: "",
@@ -97,7 +97,7 @@ const postsGlobal = [
         }, //optional
       },
       content: "This is a post", //UTF-8
-      creationDate: "datetime+UTC",
+      creationDate: "2024-05-01T13:00:00",
       location: {
         latitude: 0,
         longitude: 0,
@@ -116,7 +116,7 @@ const postsGlobal = [
         height: 123, //int
       }, //optional
     },
-    creationDate: "2010-03-01T13:00:00Z",
+    creationDate: "2010-05-01T13:00:00Z",
     content: "Global Post 3", //UTF-8
     location: {
       latitude: 0,
@@ -139,7 +139,7 @@ const postsGlobal = [
         }, //optional
       },
       content: "This is a post", //UTF-8
-      creationDate: "datetime+UTC",
+      creationDate: "2024-05-01T13:00:00",
       location: {
         latitude: 0,
         longitude: 0,
@@ -158,7 +158,7 @@ const postsGlobal = [
         height: 123, //int
       }, //optional
     },
-    creationDate: "2010-03-01T13:00:00Z",
+    creationDate: "2010-05-01T13:00:00Z",
     content: "Global Post 4", //UTF-8
     location: {
       latitude: 0,
@@ -181,7 +181,7 @@ const postsGlobal = [
         }, //optional
       },
       content: "This is a post", //UTF-8
-      creationDate: "datetime+UTC",
+      creationDate: "2024-05-01T13:00:00",
       location: {
         latitude: 0,
         longitude: 0,
@@ -200,7 +200,7 @@ const postsGlobal = [
         height: 123, //int
       }, //optional
     },
-    creationDate: "2010-03-01T13:00:00Z",
+    creationDate: "2010-05-01T13:00:00Z",
     content: "Global Post 5", //UTF-8
     location: {
       latitude: 0,
@@ -228,7 +228,7 @@ const postsGlobal = [
         width: 123, //int
         height: 123, //int
       }, //optional
-      creationDate: "datetime+UTC",
+      creationDate: "2024-05-01T13:00:00",
       location: {
         latitude: 0,
         longitude: 0,
@@ -247,7 +247,7 @@ const postsGlobal = [
         height: 123, //int
       }, //optional
     },
-    creationDate: "2010-03-01T13:00:00Z",
+    creationDate: "2010-05-01T13:00:00Z",
     content: "Global Post 6", //UTF-8
     location: {
       latitude: 0,
@@ -270,7 +270,7 @@ const postsGlobal = [
         }, //optional
       },
       content: "This is a post", //UTF-8
-      creationDate: "datetime+UTC",
+      creationDate: "2024-05-01T13:00:00",
       location: {
         latitude: 0,
         longitude: 0,
@@ -289,7 +289,7 @@ const postsGlobal = [
         height: 123, //int
       }, //optional
     },
-    creationDate: "2010-03-01T13:00:00Z",
+    creationDate: "2010-05-01T13:00:00Z",
     content: "Global Post 7", //UTF-8
     location: {
       latitude: 0,
@@ -312,7 +312,7 @@ const postsGlobal = [
         }, //optional
       },
       content: "This is a post", //UTF-8
-      creationDate: "datetime+UTC",
+      creationDate: "2024-05-01T13:00:00",
       location: {
         latitude: 0,
         longitude: 0,
@@ -332,7 +332,7 @@ const postsGlobal = [
         height: 123, //int
       }, //optional
     },
-    creationDate: "2010-03-01T13:00:00Z",
+    creationDate: "2010-05-01T13:00:00Z",
     content: "Global Post 8", //UTF-8
     location: {
       latitude: 0,
@@ -355,7 +355,7 @@ const postsGlobal = [
         }, //optional
       },
       content: "This is a post", //UTF-8
-      creationDate: "datetime+UTC",
+      creationDate: "2024-05-01T13:00:00",
       location: {
         latitude: 0,
         longitude: 0,
@@ -374,7 +374,7 @@ const postsGlobal = [
         height: 123, //int
       }, //optional
     },
-    creationDate: "2010-03-01T13:00:00Z",
+    creationDate: "2010-05-01T13:00:00Z",
     content: "Global Post 9", //UTF-8
     location: {
       latitude: 0,
@@ -397,7 +397,7 @@ const postsGlobal = [
         }, //optional
       },
       content: "This is a post", //UTF-8
-      creationDate: "datetime+UTC",
+      creationDate: "2024-05-01T13:00:00",
       location: {
         latitude: 0,
         longitude: 0,
@@ -416,7 +416,7 @@ const postsGlobal = [
         height: 123, //int
       }, //optional
     },
-    creationDate: "2010-03-01T13:00:00Z",
+    creationDate: "2010-05-01T13:00:00Z",
     content: "Global Post 10", //UTF-8
     location: {
       latitude: 0,
@@ -439,7 +439,7 @@ const postsGlobal = [
         }, //optional
       },
       content: "This is a post", //UTF-8
-      creationDate: "datetime+UTC",
+      creationDate: "2024-05-01T13:00:00",
       location: {
         latitude: 0,
         longitude: 0,
@@ -458,7 +458,7 @@ const postsGlobal = [
         height: 123, //int
       }, //optional
     },
-    creationDate: "2007-03-01T13:00:00Z",
+    creationDate: "2024-05-01T13:00:00Z",
     content: "Global Post 11", //UTF-8
     location: {
       latitude: 0,
@@ -486,7 +486,7 @@ const postsGlobal = [
         width: 123, //int
         height: 123, //int
       }, //optional
-      creationDate: "datetime+UTC",
+      creationDate: "2024-05-01T13:00:00",
       location: {
         latitude: 0,
         longitude: 0,
@@ -507,7 +507,7 @@ const postsPersonal = [
         height: 123, //int
       }, //optional
     },
-    creationDate: "2011-03-01T13:00:00Z",
+    creationDate: "2024-05-01T13:00:00Z",
     content: "Personal Post 1", //UTF-8
     location: {
       latitude: 0,
@@ -530,7 +530,7 @@ const postsPersonal = [
         }, //optional: "",
       },
       content: "This is a post", //UTF-8
-      creationDate: "datetime+UTC",
+      creationDate: "2024-05-01T13:00:00",
       location: {
         latitude: 0,
         longitude: 0,
@@ -549,7 +549,7 @@ const postsPersonal = [
         height: 123, //int
       }, //optional
     },
-    creationDate: "2010-03-01T13:00:00Z",
+    creationDate: "2010-05-01T13:00:00Z",
     content: "Personal Post 2", //UTF-8
     location: {
       latitude: 0,
@@ -572,7 +572,7 @@ const postsPersonal = [
         }, //optional
       },
       content: "This is a post", //UTF-8
-      creationDate: "datetime+UTC",
+      creationDate: "2024-05-01T13:00:00",
       location: {
         latitude: 0,
         longitude: 0,
@@ -591,7 +591,7 @@ const postsPersonal = [
         height: 123, //int
       }, //optional
     },
-    creationDate: "2007-03-01T13:00:00Z",
+    creationDate: "2024-05-01T13:00:00Z",
     content: "Personal Post 3", //UTF-8
     location: {
       latitude: 0,
@@ -614,7 +614,7 @@ const postsPersonal = [
         }, //optional
       },
       content: "This is a post", //UTF-8
-      creationDate: "datetime+UTC",
+      creationDate: "2024-05-01T13:00:00",
       location: {
         latitude: 0,
         longitude: 0,

@@ -29,6 +29,7 @@ router.get("/", (req, res) => {
                 height: 123, //int
               }, //optional
             },
+            creationDate: "2024-05-05T13:00:00Z",
           },
           {
             notificationId: "866bea46-e71b-4c68-a67c-c34a0908b4ef",
@@ -43,6 +44,7 @@ router.get("/", (req, res) => {
                 height: 123, //int
               }, //optional
             },
+            creationDate: "2024-05-05T13:00:00Z",
           },
           {
             notificationId: "866bea46-e71b-4c68-a67c-c34a0908b357",
@@ -57,6 +59,7 @@ router.get("/", (req, res) => {
                 height: 123, //int
               }, //optional
             },
+            creationDate: "2024-05-05T13:00:00Z",
           },
           {
             notificationId: "866bea46-e71b-4c68-a67c-c34a0908b356",
@@ -71,6 +74,7 @@ router.get("/", (req, res) => {
                 height: 123, //int
               }, //optional
             },
+            creationDate: "2024-05-05T13:00:00Z",
           },
           {
             notificationId: "866bea46-e722b-4c68-a67c-c34a0908b356",
@@ -85,6 +89,7 @@ router.get("/", (req, res) => {
                 height: 123, //int
               }, //optional
             },
+            creationDate: "2024-05-05T13:00:00Z",
           },
         ],
       };

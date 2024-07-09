@@ -25,6 +25,7 @@ router.get("/", (req, res) => {
                 height: 123, //int
               }, //optional
             },
+            creationDate: "2024-05-05T13:00:00Z",
           },
           {
             chatId: "6bf04939-7cd5-4bb8-aea1-60a6785188f4",
@@ -37,6 +38,7 @@ router.get("/", (req, res) => {
                 height: 123, //int
               }, //optional
             },
+            creationDate: "2024-05-05T13:00:00Z",
           },
           {
             chatId: "7cf04939-7cd5-4bb8-aea1-60a6785188f5",
@@ -49,6 +51,7 @@ router.get("/", (req, res) => {
                 height: 123, //int
               }, //optional
             },
+            creationDate: "2024-05-05T13:00:00Z",
           },
           {
             chatId: "8df04939-7cd5-4bb8-aea1-60a6785188f6",
@@ -61,6 +64,7 @@ router.get("/", (req, res) => {
                 height: 123, //int
               }, //optional
             },
+            creationDate: "2024-05-05T13:00:00Z",
           },
         ],
       };

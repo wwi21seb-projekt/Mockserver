@@ -2,18 +2,18 @@ const express = require("express");
 const router = express.Router();
 
 /* //Codes:
-200: OK
+204: OK
 400: Bad Request
 401: Unauthorized
 403: Forbidden
  */
-let errorSetter = 200;
+let errorSetter = 204;
 let mockData;
 
 router.patch("/", (req, res) => {
   //req - body = { oldPassword: , newPassword: } ?? Is this correct
   switch (errorSetter) {
-    case 200:
+    case 204:
       mockData = {};
       break;
     case 400:
